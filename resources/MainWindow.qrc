@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="arrow right">
+    <file>../images/ФотоКаратау/01.jpg</file>
+    <file>../images/ФотоКаратау/02.jpg</file>
+    <file>../images/ФотоКаратау/03.jpg</file>
+    <file>../images/ФотоКаратау/04.jpg</file>
+    <file>../images/Karatau yellow background.png</file>
+    <file>../images/yel arr left.png</file>
+    <file>../images/yel arr right.png</file>
+  </qresource>
+</RCC>
