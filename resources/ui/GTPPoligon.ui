@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(65, 102, 245);
+background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>761</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/GTP/images/GTP Map/poligon.jpg)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources/GTP.qrc">:/GTP/images/GTP Map/poligon.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uPRRButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>170</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+    </property>
+    <property name="text">
+     <string>УПРР</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uPVRButton">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>80</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+    </property>
+    <property name="text">
+     <string>УПВР</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uPPRButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>170</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+    </property>
+    <property name="text">
+     <string>УППР</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sZhRButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>60</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+    </property>
+    <property name="text">
+     <string>СЖР</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gtpMapButton_5">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>110</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 10pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+    </property>
+    <property name="text">
+     <string>Шламотстойник</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gtpMapButton_6">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+    </property>
+    <property name="text">
+     <string>Связь</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>uPPRButton</zorder>
+   <zorder>sZhRButton</zorder>
+   <zorder>uPRRButton</zorder>
+   <zorder>uPVRButton</zorder>
+   <zorder>gtpMapButton_5</zorder>
+   <zorder>gtpMapButton_6</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>760</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{background-color: rgb(246, 250, 5);
+background-image: url(:/arrow right/images/Karatau yellow background.png);
+}
+QMenuBar:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+
+}</string>
+   </property>
+   <widget class="QMenu" name="menuMaps">
+    <property name="styleSheet">
+     <string notr="true">QMenu:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+}</string>
+    </property>
+    <property name="title">
+     <string>Карты</string>
+    </property>
+    <addaction name="actionGlobalMap"/>
+    <addaction name="actionKaratauMap"/>
+   </widget>
+   <widget class="QMenu" name="menuAboutUs">
+    <property name="title">
+     <string>О нас</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuObjects">
+    <property name="title">
+     <string>Цеха и объекты</string>
+    </property>
+    <widget class="QMenu" name="menuActionGTP">
+     <property name="title">
+      <string>ГТП</string>
+     </property>
+     <addaction name="actionPoligon"/>
+     <addaction name="actionRaskomandirovka"/>
+    </widget>
+    <widget class="QMenu" name="menuActionFKhL">
+     <property name="title">
+      <string>ФХЛ</string>
+     </property>
+     <addaction name="actionFKhLFirstFloor"/>
+     <addaction name="actionFKhLSecondFloor"/>
+    </widget>
+    <addaction name="menuActionGTP"/>
+    <addaction name="actionCPPR"/>
+    <addaction name="actionAP"/>
+    <addaction name="separator"/>
+    <addaction name="actionGBK"/>
+    <addaction name="menuActionFKhL"/>
+   </widget>
+   <widget class="QMenu" name="menuDepartments">
+    <property name="title">
+     <string>Службы</string>
+    </property>
+    <addaction name="KIPiA"/>
+    <addaction name="SGE"/>
+    <addaction name="SGM"/>
+   </widget>
+   <widget class="QMenu" name="menuWhatIsIt">
+    <property name="title">
+     <string>Что это такое?</string>
+    </property>
+   </widget>
+   <addaction name="menuMaps"/>
+   <addaction name="menuAboutUs"/>
+   <addaction name="menuObjects"/>
+   <addaction name="menuDepartments"/>
+   <addaction name="menuWhatIsIt"/>
+  </widget>
+  <action name="actionGlobalMap">
+   <property name="text">
+    <string>Глобальная</string>
+   </property>
+  </action>
+  <action name="actionCPPR">
+   <property name="text">
+    <string>ЦППР</string>
+   </property>
+  </action>
+  <action name="actionAP">
+   <property name="text">
+    <string>АП</string>
+   </property>
+  </action>
+  <action name="actionGBK">
+   <property name="text">
+    <string>ГБК</string>
+   </property>
+  </action>
+  <action name="actionPoligon">
+   <property name="text">
+    <string>Полигон</string>
+   </property>
+  </action>
+  <action name="actionRaskomandirovka">
+   <property name="text">
+    <string>Раскомандировка</string>
+   </property>
+  </action>
+  <action name="actionFKhLFirstFloor">
+   <property name="text">
+    <string>Первый этаж</string>
+   </property>
+  </action>
+  <action name="actionFKhLSecondFloor">
+   <property name="text">
+    <string>Второй этаж</string>
+   </property>
+  </action>
+  <action name="KIPiA">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>КИПиА</string>
+   </property>
+  </action>
+  <action name="SGE">
+   <property name="text">
+    <string>СГЭ</string>
+   </property>
+  </action>
+  <action name="SGM">
+   <property name="text">
+    <string>СГМ</string>
+   </property>
+  </action>
+  <action name="actionKaratauMap">
+   <property name="text">
+    <string>Каратау</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources/logos.qrc"/>
+  <include location="resources/GTP.qrc"/>
+  <include location="resources/MainWindow.qrc"/>
+  <include location="resources/MainWindowResize.qrc"/>
+ </resources>
+ <connections/>
+</ui>

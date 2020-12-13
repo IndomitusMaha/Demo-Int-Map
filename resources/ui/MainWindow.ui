@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(65, 102, 245);
+background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="wlcomeToAppLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font: 14pt &quot;Segoe UI Emoji&quot;;
+color: rgb(0, 0, 0);
+background-image: url(:/arrow right/images/Karatau yellow background.png);
+border-style:outset;
+border-radius:10px;
+
+}</string>
+        </property>
+        <property name="text">
+         <string>  Добро пожаловать в интерактивный гайд по руднику Каратау     </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="imageLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources/MainWindowResize.qrc">:/Resize/images/ФотоУмень/01.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="4">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="previousImgButton">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+border-image: url(:/arrow right/images/yel arr left.png);
+border-style:outset;
+border-radius:8px;
+font: 10pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="nextImgButton">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+border-image: url(:/arrow right/images/yel arr right.png);
+border-style:outset;
+border-radius:8px;
+font: 10pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="goToSiteButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:8px;
+font: 80 10pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+          </property>
+          <property name="text">
+           <string>Перейти на сайт</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="emptySpaceLabel">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="modeLabel">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font: 75 14pt &quot;Segoe UI Emoji&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:10px;
+
+}
+</string>
+        </property>
+        <property name="text">
+         <string>        Режим</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="workerRadioButton">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton{
+color: rgb(0, 0, 0);
+border-style:outset;
+border-radius:10px;
+font: 10pt &quot;Arial&quot;;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Сотрудник</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="guestRadioButton">
+          <property name="minimumSize">
+           <size>
+            <width>56</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QRadioButton{
+color: rgb(0, 0, 0);
+border-style:outset;
+border-radius:10px;
+font: 10pt &quot;Arial&quot; ;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Гость</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="welcomeVideoButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:10px;
+font: 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+        </property>
+        <property name="text">
+         <string>Приветствие    </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="gtpMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+        </property>
+        <property name="text">
+         <string>ГТП</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cpprMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:10px;
+font: 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+        </property>
+        <property name="text">
+         <string>ЦППР</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="apMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:10px;
+font: 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+        </property>
+        <property name="text">
+         <string>АП</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="goToKaratauMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(246, 250, 5);
+border-style:outset;
+border-radius:10px;
+font: 14pt &quot;Segoe UI Emoji&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+}</string>
+        </property>
+        <property name="text">
+         <string>Карта</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>760</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{background-color: rgb(246, 250, 5);
+background-image: url(:/arrow right/images/Karatau yellow background.png);
+}
+QMenuBar:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+
+}</string>
+   </property>
+   <widget class="QMenu" name="menuMaps">
+    <property name="styleSheet">
+     <string notr="true">QMenu:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+}</string>
+    </property>
+    <property name="title">
+     <string>Карты</string>
+    </property>
+    <addaction name="actionGlobalMap"/>
+    <addaction name="actionKaratauMap"/>
+   </widget>
+   <widget class="QMenu" name="menuAboutUs">
+    <property name="title">
+     <string>О нас</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuObjects">
+    <property name="title">
+     <string>Цеха и объекты</string>
+    </property>
+    <widget class="QMenu" name="menuActionGTP">
+     <property name="title">
+      <string>ГТП</string>
+     </property>
+     <addaction name="actionPoligon"/>
+     <addaction name="actionRaskomandirovka"/>
+    </widget>
+    <widget class="QMenu" name="menuActionFKhL">
+     <property name="title">
+      <string>ФХЛ</string>
+     </property>
+     <addaction name="actionFKhLFirstFloor"/>
+     <addaction name="actionFKhLSecondFloor"/>
+    </widget>
+    <addaction name="menuActionGTP"/>
+    <addaction name="actionCPPR"/>
+    <addaction name="actionAP"/>
+    <addaction name="separator"/>
+    <addaction name="actionGBK"/>
+    <addaction name="menuActionFKhL"/>
+   </widget>
+   <widget class="QMenu" name="menuDepartments">
+    <property name="title">
+     <string>Службы</string>
+    </property>
+    <addaction name="KIPiA"/>
+    <addaction name="SGE"/>
+    <addaction name="SGM"/>
+   </widget>
+   <widget class="QMenu" name="menuWhatIsIt">
+    <property name="title">
+     <string>Что это такое?</string>
+    </property>
+   </widget>
+   <addaction name="menuMaps"/>
+   <addaction name="menuAboutUs"/>
+   <addaction name="menuObjects"/>
+   <addaction name="menuDepartments"/>
+   <addaction name="menuWhatIsIt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <action name="actionGlobalMap">
+   <property name="text">
+    <string>Глобальная</string>
+   </property>
+  </action>
+  <action name="actionCPPR">
+   <property name="text">
+    <string>ЦППР</string>
+   </property>
+  </action>
+  <action name="actionAP">
+   <property name="text">
+    <string>АП</string>
+   </property>
+  </action>
+  <action name="actionGBK">
+   <property name="text">
+    <string>ГБК</string>
+   </property>
+  </action>
+  <action name="actionPoligon">
+   <property name="text">
+    <string>Полигон</string>
+   </property>
+  </action>
+  <action name="actionRaskomandirovka">
+   <property name="text">
+    <string>Раскомандировка</string>
+   </property>
+  </action>
+  <action name="actionFKhLFirstFloor">
+   <property name="text">
+    <string>Первый этаж</string>
+   </property>
+  </action>
+  <action name="actionFKhLSecondFloor">
+   <property name="text">
+    <string>Второй этаж</string>
+   </property>
+  </action>
+  <action name="KIPiA">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>КИПиА</string>
+   </property>
+  </action>
+  <action name="SGE">
+   <property name="text">
+    <string>СГЭ</string>
+   </property>
+  </action>
+  <action name="SGM">
+   <property name="text">
+    <string>СГМ</string>
+   </property>
+  </action>
+  <action name="actionKaratauMap">
+   <property name="text">
+    <string>Каратау</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources/logos.qrc"/>
+  <include location="resources/MainWindow.qrc"/>
+  <include location="resources/MainWindowResize.qrc"/>
+ </resources>
+ <connections/>
+</ui>

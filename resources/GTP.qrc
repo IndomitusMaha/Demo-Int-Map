@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="GTP">
+    <file>../images/GTP Map/КУБ-5.jpg</file>
+    <file>../images/GTP Map/УПРР.jpg</file>
+    <file>../images/GTP Map/poligon.jpg</file>
+  </qresource>
+</RCC>

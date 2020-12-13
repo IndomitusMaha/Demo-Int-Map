@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Resize">
+    <file>../images/ФотоУмень/01.jpg</file>
+    <file>../images/ФотоУмень/02.jpg</file>
+    <file>../images/ФотоУмень/03.jpg</file>
+    <file>../images/ФотоУмень/04.jpg</file>
+  </qresource>
+</RCC>
