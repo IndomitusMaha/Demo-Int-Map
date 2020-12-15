@@ -110,11 +110,13 @@ class Ui_KUB5(object):
 
     def manual(self):
         import os
+        import subprocess
         script_path = os.path.abspath(__file__)
         script_dir = os.path.split(script_path)[0]
         rel_path = "resources//manuals//placeholder.pdf"
         abs_file_path = os.path.join(script_dir,rel_path)
-        os.startfile(abs_file_path)
+        #os.startfile(abs_file_path)
+        subprocess.Popen(["cmd", "/C", "start " + rel_path], shell=True)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

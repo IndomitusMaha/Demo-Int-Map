@@ -6,6 +6,9 @@ qrc to py
 https://gis.stackexchange.com/questions/293285/problem-converting-qrc-file-into-py-one-by-pyqt5
 general tip
 https://python-scripts.com/pyqt5
-
+open files (last option is optimal)
+https://stackoverflow.com/questions/7165749/open-file-in-a-relative-location-in-python?newreg=1380a416a4604fea8278204318e04020#
+subprocess Popen
+https://stackoverflow.com/questions/63607226/cannot-open-a-file-with-subprocess-popen
 
 
