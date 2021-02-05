@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>661</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>661</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(65, 102, 245);
+background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="labelMap">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>761</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>761</width>
+      <height>481</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>761</width>
+      <height>481</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Maps/Производство.JPG)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Maps.qrc">:/Maps/Производство.JPG</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>230</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ЦППР</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>350</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string>  Цент. Склад</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>50</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ТНС</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>250</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>АП</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>390</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ССР</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton_5">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ФХЛ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton_6">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>140</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>СЖР</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proizvodstvoButton_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>140</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+border-style:outset;
+border-radius:10px;
+font: 100 14pt &quot;Arial&quot; ;
+}
+QPushButton:hover{
+color:rgb(0, 0, 05);
+background-color: rgb(245, 169, 17);
+border-radius:5px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 148, 164);
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ЦНС</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>260</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string>  ХБК</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string>  КПП</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>230</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string>Тех. Вода</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>160</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string> Автобокс</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string> АБК</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>130</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string>Сухой склад</string>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionGlobalMap">
+   <property name="text">
+    <string>Глобальная</string>
+   </property>
+  </action>
+  <action name="actionCPPR">
+   <property name="text">
+    <string>ЦППР</string>
+   </property>
+  </action>
+  <action name="actionAP">
+   <property name="text">
+    <string>АП</string>
+   </property>
+  </action>
+  <action name="actionGBK">
+   <property name="text">
+    <string>ГБК</string>
+   </property>
+  </action>
+  <action name="actionPoligon">
+   <property name="text">
+    <string>Полигон</string>
+   </property>
+  </action>
+  <action name="actionRaskomandirovka">
+   <property name="text">
+    <string>Раскомандировка</string>
+   </property>
+  </action>
+  <action name="actionFKhLFirstFloor">
+   <property name="text">
+    <string>Первый этаж</string>
+   </property>
+  </action>
+  <action name="actionFKhLSecondFloor">
+   <property name="text">
+    <string>Второй этаж</string>
+   </property>
+  </action>
+  <action name="KIPiA">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>КИПиА</string>
+   </property>
+  </action>
+  <action name="SGE">
+   <property name="text">
+    <string>СГЭ</string>
+   </property>
+  </action>
+  <action name="SGM">
+   <property name="text">
+    <string>СГМ</string>
+   </property>
+  </action>
+  <action name="actionKaratauMap">
+   <property name="text">
+    <string>Каратау</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../logos.qrc"/>
+  <include location="../Maps.qrc"/>
+  <include location="../GTP.qrc"/>
+  <include location="../MainWindow.qrc"/>
+  <include location="../MainWindowResize.qrc"/>
+  <include location="../Maps.qrc"/>
+ </resources>
+ <connections/>
+</ui>
