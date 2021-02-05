@@ -162,7 +162,7 @@ background-color: rgb(255, 148, 164);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources/logos.qrc">:/logos/logos-2.png</pixmap>
+     <pixmap resource="../logos.qrc">:/logos/logos-2.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -185,93 +185,12 @@ url(:/GTP/images/GTP Map/КУБ-5.jpg)</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources/GTP.qrc">:/GTP/images/GTP Map/КУБ-5.jpg</pixmap>
+     <pixmap resource="../GTP.qrc">:/GTP/images/GTP Map/КУБ-5.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>517</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QMenuBar{background-color: rgb(246, 250, 5);
-background-image: url(:/arrow right/images/Karatau yellow background.png);
-}
-QMenuBar:hover{
-color:rgb(0, 0, 05);
-background-color: rgb(245, 169, 17);
-
-}</string>
-   </property>
-   <widget class="QMenu" name="menuMaps">
-    <property name="styleSheet">
-     <string notr="true">QMenu:hover{
-color:rgb(0, 0, 05);
-background-color: rgb(245, 169, 17);
-}</string>
-    </property>
-    <property name="title">
-     <string>Карты</string>
-    </property>
-    <addaction name="actionGlobalMap"/>
-    <addaction name="actionKaratauMap"/>
-   </widget>
-   <widget class="QMenu" name="menuAboutUs">
-    <property name="title">
-     <string>О нас</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuObjects">
-    <property name="title">
-     <string>Цеха и объекты</string>
-    </property>
-    <widget class="QMenu" name="menuActionGTP">
-     <property name="title">
-      <string>ГТП</string>
-     </property>
-     <addaction name="actionPoligon"/>
-     <addaction name="actionRaskomandirovka"/>
-    </widget>
-    <widget class="QMenu" name="menuActionFKhL">
-     <property name="title">
-      <string>ФХЛ</string>
-     </property>
-     <addaction name="actionFKhLFirstFloor"/>
-     <addaction name="actionFKhLSecondFloor"/>
-    </widget>
-    <addaction name="menuActionGTP"/>
-    <addaction name="actionCPPR"/>
-    <addaction name="actionAP"/>
-    <addaction name="separator"/>
-    <addaction name="actionGBK"/>
-    <addaction name="menuActionFKhL"/>
-   </widget>
-   <widget class="QMenu" name="menuDepartments">
-    <property name="title">
-     <string>Службы</string>
-    </property>
-    <addaction name="KIPiA"/>
-    <addaction name="SGE"/>
-    <addaction name="SGM"/>
-   </widget>
-   <widget class="QMenu" name="menuWhatIsIt">
-    <property name="title">
-     <string>Что это такое?</string>
-    </property>
-   </widget>
-   <addaction name="menuMaps"/>
-   <addaction name="menuAboutUs"/>
-   <addaction name="menuObjects"/>
-   <addaction name="menuDepartments"/>
-   <addaction name="menuWhatIsIt"/>
   </widget>
   <action name="actionGlobalMap">
    <property name="text">
@@ -338,11 +257,13 @@ background-color: rgb(245, 169, 17);
   </action>
  </widget>
  <resources>
-  <include location="resources/logos.qrc"/>
+  <include location="../logos.qrc"/>
+  <include location="../GTP.qrc"/>
+  <include location="../MainWindow.qrc"/>
+  <include location="../MainWindowResize.qrc"/>
+  <include location="../logos.qrc"/>
   <include location="resources/GTP.qrc"/>
-  <include location="resources/MainWindow.qrc"/>
-  <include location="resources/MainWindowResize.qrc"/>
-  <include location="logos.qrc"/>
+  <include location="resources/logos.qrc"/>
  </resources>
  <connections/>
 </ui>
