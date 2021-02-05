@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="Maps">
+    <file>../images/Maps/АБК.JPG</file>
+    <file>../images/Maps/АП.jpg</file>
+    <file>../images/Maps/Вахтовый Поселок.JPG</file>
+    <file>../images/Maps/ГБК Макет.jpg</file>
+    <file>../images/Maps/ГБК.JPG</file>
+    <file>../images/Maps/Глобальная.jpg</file>
+    <file>../images/Maps/Каратау 2 Макет.jpg</file>
+    <file>../images/Maps/Каратау Макет.jpg</file>
+    <file>../images/Maps/Каратау.jpg</file>
+    <file>../images/Maps/Производство Макет.jpg</file>
+    <file>../images/Maps/Производство.JPG</file>
+    <file>../images/Maps/СЖР.JPG</file>
+    <file>../images/Maps/ССР.JPG</file>
+    <file>../images/Maps/ТНС.JPG</file>
+    <file>../images/Maps/ФХЛ.JPG</file>
+    <file>../images/Maps/ЦППР Макет.jpg</file>
+    <file>../images/Maps/ЦППР.jpg</file>
+  </qresource>
+</RCC>

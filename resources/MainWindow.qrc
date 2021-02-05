@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="arrow right">
+    <file>Karatau blue background.png</file>
     <file>../images/ФотоКаратау/01.jpg</file>
     <file>../images/ФотоКаратау/02.jpg</file>
     <file>../images/ФотоКаратау/03.jpg</file>
