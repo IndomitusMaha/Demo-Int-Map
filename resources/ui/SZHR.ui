@@ -149,13 +149,13 @@ background-color: rgb(255, 148, 164);
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">Background-image:url(:/Maps/images/Maps/СЖР.JPG)</string>
+     <string notr="true">Background-image:url(:/MapsResize/images/MapsУмень/СЖР.jpg)</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Maps.qrc">:/Maps/images/Maps/СЖР.JPG</pixmap>
+     <pixmap resource="../MapsResize.qrc">:/MapsResize/images/MapsУмень/СЖР.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -228,7 +228,7 @@ background-color: rgb(255, 148, 164);
  </widget>
  <resources>
   <include location="../logos.qrc"/>
-  <include location="../Maps.qrc"/>
+  <include location="../MapsResize.qrc"/>
   <include location="../MainWindow.qrc"/>
  </resources>
  <connections/>

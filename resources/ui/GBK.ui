@@ -39,7 +39,7 @@ background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.p
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>120</y>
+      <y>160</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -79,11 +79,11 @@ background-color: rgb(255, 148, 164);
      <string>Приветствие</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="szhrButton">
+   <widget class="QPushButton" name="perviietazhButton">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>170</y>
+      <y>210</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -114,7 +114,7 @@ background-color: rgb(255, 148, 164);
 }</string>
     </property>
     <property name="text">
-     <string>ССР</string>
+     <string>ГБК</string>
     </property>
    </widget>
    <widget class="QLabel" name="Logos">
@@ -149,13 +149,13 @@ background-color: rgb(255, 148, 164);
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">Background-image:url(:/MapsResize/images/MapsУмень/ССР.jpg)</string>
+     <string notr="true">Background-image:url(:/MapsResize/images/MapsУмень/ГБК.jpg)</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../MapsResize.qrc">:/MapsResize/images/MapsУмень/ССР.jpg</pixmap>
+     <pixmap resource="../MapsResize.qrc">:/MapsResize/images/MapsУмень/ГБК.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -228,8 +228,8 @@ background-color: rgb(255, 148, 164);
  </widget>
  <resources>
   <include location="../logos.qrc"/>
-  <include location="../MainWindow.qrc"/>
   <include location="../MapsResize.qrc"/>
+  <include location="../MainWindow.qrc"/>
  </resources>
  <connections/>
 </ui>

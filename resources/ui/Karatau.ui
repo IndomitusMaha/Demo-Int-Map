@@ -60,13 +60,13 @@ background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.p
      </size>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Maps/images/Maps/Каратау.jpg)</string>
+     <string notr="true">background-image:url(:/MapsResize/images/MapsУмень/Каратау.jpg)</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Maps.qrc">:/Maps/images/Maps/Каратау.jpg</pixmap>
+     <pixmap resource="../MapsResize.qrc">:/MapsResize/images/MapsУмень/Каратау.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -242,6 +242,7 @@ font: 100 14pt &quot;Arial&quot; </string>
  </widget>
  <resources>
   <include location="../logos.qrc"/>
+  <include location="../MapsResize.qrc"/>
   <include location="../Maps.qrc"/>
   <include location="../GTP.qrc"/>
   <include location="../MainWindow.qrc"/>

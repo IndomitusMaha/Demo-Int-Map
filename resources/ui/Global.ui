@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget{
 background-color: rgb(65, 102, 245);
-background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)
+background-image: url(:/MapsResize/images/MapsУмень/Глобальная.jpg)
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -61,13 +61,13 @@ background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.p
     </property>
     <property name="styleSheet">
      <string notr="true">background-image:
-url(:/GTP/images/GTP Map/УПРР.jpg)</string>
+url(:/MapsResize/images/MapsУмень/Глобальная.jpg)</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Maps.qrc">:/Maps/Глобальная.jpg</pixmap>
+     <pixmap resource="../MapsResize.qrc">:/MapsResize/images/MapsУмень/Глобальная.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -371,7 +371,7 @@ background-color: rgb(255, 148, 164);
       <x>160</x>
       <y>30</y>
       <width>151</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -387,7 +387,7 @@ color: rgb(0, 0, 0);
 background-color: rgb(65, 102, 245);
 border-style:outset;
 border-radius:10px;
-font: 100 10pt &quot;Arial&quot; ;
+font: 100 14pt &quot;Arial&quot; ;
 }
 QPushButton:hover{
 color:rgb(0, 0, 05);
@@ -400,7 +400,7 @@ background-color: rgb(255, 148, 164);
 }</string>
     </property>
     <property name="text">
-     <string>Западный Мынкудук</string>
+     <string>Зап. Мынкудук</string>
     </property>
    </widget>
   </widget>
@@ -470,6 +470,7 @@ background-color: rgb(255, 148, 164);
  </widget>
  <resources>
   <include location="../logos.qrc"/>
+  <include location="../MapsResize.qrc"/>
   <include location="../Maps.qrc"/>
   <include location="../GTP.qrc"/>
   <include location="../MainWindow.qrc"/>

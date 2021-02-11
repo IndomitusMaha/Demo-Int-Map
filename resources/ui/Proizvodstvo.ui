@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>661</width>
-    <height>450</height>
+    <width>800</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>661</width>
-    <height>450</height>
+    <width>800</width>
+    <height>500</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>661</width>
-    <height>450</height>
+    <width>800</width>
+    <height>500</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -43,30 +43,30 @@ background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.p
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>761</width>
-      <height>481</height>
+      <width>800</width>
+      <height>500</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>761</width>
-      <height>481</height>
+      <width>800</width>
+      <height>500</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>761</width>
-      <height>481</height>
+      <width>800</width>
+      <height>500</height>
      </size>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Maps/images/Maps/Производство.JPG)</string>
+     <string notr="true">background-image:url(:/MapsResize/images/MapsУмень/Производство.jpg)</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Maps.qrc">:/Maps/images/Maps/Производство.JPG</pixmap>
+     <pixmap resource="../MapsResize.qrc">:/MapsResize/images/MapsУмень/Производство.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -78,8 +78,8 @@ background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.p
     </property>
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>230</y>
+      <x>490</x>
+      <y>240</y>
       <width>71</width>
       <height>30</height>
      </rect>
@@ -117,8 +117,8 @@ border-radius:20px;
    <widget class="QLabel" name="centSkladLabel">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>350</y>
+      <x>490</x>
+      <y>370</y>
       <width>121</width>
       <height>21</height>
      </rect>
@@ -139,7 +139,7 @@ font: 100 14pt &quot;Arial&quot; </string>
     </property>
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>310</x>
       <y>50</y>
       <width>61</width>
       <height>30</height>
@@ -181,8 +181,8 @@ border-radius:20px;
     </property>
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>250</y>
+      <x>690</x>
+      <y>300</y>
       <width>71</width>
       <height>30</height>
      </rect>
@@ -223,8 +223,8 @@ border-radius:20px;
     </property>
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>390</y>
+      <x>350</x>
+      <y>380</y>
       <width>71</width>
       <height>30</height>
      </rect>
@@ -265,8 +265,8 @@ border-radius:20px;
     </property>
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>300</y>
+      <x>170</x>
+      <y>290</y>
       <width>71</width>
       <height>30</height>
      </rect>
@@ -307,8 +307,8 @@ border-radius:20px;
     </property>
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>140</y>
+      <x>320</x>
+      <y>150</y>
       <width>61</width>
       <height>30</height>
      </rect>
@@ -349,7 +349,7 @@ border-radius:20px;
     </property>
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>450</x>
       <y>140</y>
       <width>61</width>
       <height>30</height>
@@ -388,8 +388,8 @@ border-radius:20px;
    <widget class="QLabel" name="hbkLabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>260</y>
+      <x>10</x>
+      <y>270</y>
       <width>61</width>
       <height>21</height>
      </rect>
@@ -407,8 +407,8 @@ font: 100 14pt &quot;Arial&quot; </string>
    <widget class="QLabel" name="kppLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>180</y>
+      <x>30</x>
+      <y>190</y>
       <width>61</width>
       <height>21</height>
      </rect>
@@ -445,8 +445,8 @@ font: 100 14pt &quot;Arial&quot; </string>
    <widget class="QLabel" name="avtoboksLabel">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>160</y>
+      <x>170</x>
+      <y>180</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -464,8 +464,8 @@ font: 100 14pt &quot;Arial&quot; </string>
    <widget class="QLabel" name="abkLabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>220</y>
+      <x>130</x>
+      <y>230</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -483,8 +483,8 @@ font: 100 14pt &quot;Arial&quot; </string>
    <widget class="QLabel" name="sukhSkladLabel">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>130</y>
+      <x>610</x>
+      <y>150</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -497,6 +497,25 @@ font: 100 14pt &quot;Arial&quot; </string>
     </property>
     <property name="text">
      <string>Сухой склад</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="disaktivaciaLabel">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>210</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/arrow right/Karatau blue background.png);
+color: rgb(0, 0, 0);
+background-color: rgb(65, 102, 245);
+font: 100 14pt &quot;Arial&quot; </string>
+    </property>
+    <property name="text">
+     <string>Дизактивация</string>
     </property>
    </widget>
   </widget>
@@ -566,6 +585,7 @@ font: 100 14pt &quot;Arial&quot; </string>
  </widget>
  <resources>
   <include location="../logos.qrc"/>
+  <include location="../MapsResize.qrc"/>
   <include location="../Maps.qrc"/>
   <include location="../GTP.qrc"/>
   <include location="../MainWindow.qrc"/>
