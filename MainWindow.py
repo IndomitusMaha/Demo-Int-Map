@@ -16,6 +16,12 @@ from resources import MainWindowResources
 from resources import MainWindowResourcesResize
 from OtherWindow import Ui_OtherWindow
 from GTPPoligon import Ui_GTPPoligon
+from Global import Ui_GlobalMap
+from Karatau import Ui_Karatau
+from CPPR import  Ui_CPPR
+from AP import Ui_AP
+from GBK import Ui_GBK
+from UnderConstruction import Ui_UnderConstruction
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -159,7 +165,7 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.goToSiteButton.setObjectName("goToSiteButton")
-        self.goToSiteButton.clicked.connect(self.goToSite)
+        self.goToSiteButton.clicked.connect(self.goToSite) #функция в другом модуле
 
         self.gridLayout_2.addWidget(self.goToSiteButton, 1, 4, 1, 1)
         self.emptySpaceLabel = QtWidgets.QLabel(self.centralwidget)
@@ -258,6 +264,8 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.gtpMapButton.setObjectName("gtpMapButton")
+        self.gtpMapButton.clicked.connect(self.gtpPoligon)
+
         self.verticalLayout.addWidget(self.gtpMapButton)
 
         self.cpprMapButton = QtWidgets.QPushButton(self.centralwidget)
@@ -279,6 +287,8 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.cpprMapButton.setObjectName("cpprMapButton")
+        self.cpprMapButton.clicked.connect(self.cppr)
+
         self.verticalLayout.addWidget(self.cpprMapButton)
 
         self.apMapButton = QtWidgets.QPushButton(self.centralwidget)
@@ -300,6 +310,8 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.apMapButton.setObjectName("apMapButton")
+        self.apMapButton.clicked.connect(self.ap)
+
         self.verticalLayout.addWidget(self.apMapButton)
 
         spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -329,6 +341,8 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.goToKaratauMapButton.setObjectName("goToKaratauMapButton")
+        self.goToKaratauMapButton.clicked.connect(self.karatauMap)
+
         self.verticalLayout.addWidget(self.goToKaratauMapButton)
 
         self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
@@ -381,13 +395,19 @@ class Ui_MainWindow(object):
 
         self.actionGlobalMap = QtWidgets.QAction(MainWindow)
         self.actionGlobalMap.setObjectName("actionGlobalMap")
+        self.actionGlobalMap.triggered.connect(self.globalMap)
 
         self.actionCPPR = QtWidgets.QAction(MainWindow)
         self.actionCPPR.setObjectName("actionCPPR")
+        self.actionCPPR.triggered.connect(self.cppr)
+
         self.actionAP = QtWidgets.QAction(MainWindow)
         self.actionAP.setObjectName("actionAP")
+        self.actionAP.triggered.connect(self.ap)
+
         self.actionGBK = QtWidgets.QAction(MainWindow)
         self.actionGBK.setObjectName("actionGBK")
+        self.actionGBK.triggered.connect(self.gbk)
 
         self.actionPoligon = QtWidgets.QAction(MainWindow)
         self.actionPoligon.setObjectName("actionPoligon")
@@ -395,19 +415,33 @@ class Ui_MainWindow(object):
 
         self.actionRaskomandirovka = QtWidgets.QAction(MainWindow)
         self.actionRaskomandirovka.setObjectName("actionRaskomandirovka")
+        self.actionRaskomandirovka.triggered.connect(self.underConstruction)
+
         self.actionFKhLFirstFloor = QtWidgets.QAction(MainWindow)
         self.actionFKhLFirstFloor.setObjectName("actionFKhLFirstFloor")
+        self.actionFKhLFirstFloor.triggered.connect(self.underConstruction)
+
         self.actionFKhLSecondFloor = QtWidgets.QAction(MainWindow)
         self.actionFKhLSecondFloor.setObjectName("actionFKhLSecondFloor")
+        self.actionFKhLSecondFloor.triggered.connect(self.underConstruction)
+
         self.KIPiA = QtWidgets.QAction(MainWindow)
         self.KIPiA.setCheckable(False)
+        self.KIPiA.triggered.connect(self.underConstruction)
         self.KIPiA.setObjectName("KIPiA")
+
         self.SGE = QtWidgets.QAction(MainWindow)
         self.SGE.setObjectName("SGE")
+        self.SGE.triggered.connect(self.underConstruction)
+
         self.SGM = QtWidgets.QAction(MainWindow)
         self.SGM.setObjectName("SGM")
+        self.SGM.triggered.connect(self.underConstruction)
+
         self.actionKaratauMap = QtWidgets.QAction(MainWindow)
         self.actionKaratauMap.setObjectName("actionKaratauMap")
+        self.actionKaratauMap.triggered.connect(self.karatauMap)
+
         self.menuMaps.addAction(self.actionGlobalMap)
         self.menuMaps.addAction(self.actionKaratauMap)
         self.menuActionGTP.addAction(self.actionPoligon)
@@ -433,7 +467,10 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-
+    def countminus(self):
+        self.i = self.i-1
+        if self.i < 1:
+            self.i = 1
 
     def countplus(self):
         self.i = self.i+1
@@ -483,11 +520,41 @@ class Ui_MainWindow(object):
 
             self.verticalLayout_2.addWidget(self.imageLabel, 3, 0)
 
+    def cppr(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_CPPR()
+        self.ui.setupUi(self.window)
+        self.window.show()
 
-    def countminus(self):
-        self.i = self.i-1
-        if self.i < 1:
-            self.i = 1
+    def ap(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_AP()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def globalMap(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_GlobalMap()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def karatauMap(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Karatau()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def gbk(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_GBK()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def underConstruction(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_UnderConstruction()
+        self.ui.setupUi(self.window)
+        self.window.show()
 
     def gtpPoligon(self):
         self.window = QtWidgets.QMainWindow()
@@ -495,16 +562,7 @@ class Ui_MainWindow(object):
         self.ui.setupUi(self.window)
         #MainWindow.hide()
         self.window.show()
-
-    def goToSite(self):
-        script_path = os.path.abspath(__file__)
-        script_dir = os.path.split(script_path)[0]
-        rel_path = "resources//links//Karatau.url"
-        abs_file_path = os.path.join(script_dir,rel_path)
-        #os.startfile(abs_file_path)
-        #subprocess.call(abs_file_path, shell=True)
-        subprocess.Popen(["cmd", "/C", "start " + rel_path], shell=True)
-
+     
     def welcomeVideo(self):
         script_path = os.path.abspath(__file__)
         script_dir = os.path.split(script_path)[0]
@@ -512,6 +570,16 @@ class Ui_MainWindow(object):
         abs_file_path = os.path.join(script_dir, rel_path)
         #os.startfile(abs_file_path)
         subprocess.Popen(["cmd", "/C", "start " + rel_path], shell=True)
+
+    def goToSite(self):
+        script_path = os.path.abspath(__file__)
+        script_dir = os.path.split(script_path)[0]
+        rel_path = "resources//links//Karatau.url"
+        abs_file_path = os.path.join(script_dir, rel_path)
+        # os.startfile(abs_file_path)
+        # subprocess.call(abs_file_path, shell=True)
+        subprocess.Popen(["cmd", "/C", "start " + rel_path], shell=True)
+
 
 
     def retranslateUi(self, MainWindow):
@@ -547,8 +615,6 @@ class Ui_MainWindow(object):
         self.SGE.setText(_translate("MainWindow", "СГЭ"))
         self.SGM.setText(_translate("MainWindow", "СГМ"))
         self.actionKaratauMap.setText(_translate("MainWindow", "Каратау"))
-#import MainWindow_rc
-#import logos_rc
 
 if __name__ == "__main__":
     import sys
