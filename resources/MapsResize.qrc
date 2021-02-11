@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="MapsResize">
+    <file>../images/MapsУмень/Производство.jpg</file>
+    <file>../images/MapsУмень/АБК.jpg</file>
+    <file>../images/MapsУмень/АП.jpg</file>
+    <file>../images/MapsУмень/Вахтовый Поселок.jpg</file>
+    <file>../images/MapsУмень/ГБК Макет.jpg</file>
+    <file>../images/MapsУмень/ГБК.jpg</file>
+    <file>../images/MapsУмень/Глобальная.jpg</file>
+    <file>../images/MapsУмень/Каратау 2 Макет.jpg</file>
+    <file>../images/MapsУмень/Каратау Макет.jpg</file>
+    <file>../images/MapsУмень/Каратау.jpg</file>
+    <file>../images/MapsУмень/Производство Макет.jpg</file>
+    <file>../images/MapsУмень/СЖР.jpg</file>
+    <file>../images/MapsУмень/ССР.jpg</file>
+    <file>../images/MapsУмень/ТНС.jpg</file>
+    <file>../images/MapsУмень/ФХЛ.jpg</file>
+    <file>../images/MapsУмень/ЦППР Макет.jpg</file>
+    <file>../images/MapsУмень/ЦППР.jpg</file>
+  </qresource>
+</RCC>
