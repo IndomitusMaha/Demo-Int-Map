@@ -21,7 +21,7 @@ file_name = "C:\\Users\\Faisal Gama\\AppData\\Local\\Temp\\car.jpg"
 subprocess.Popen(file_name, shell=True)
 
 py to exe
-pyinstaler -F -w -i"полный адрес иконки" main.py
+pyinstaller -F -w -i"полный адрес иконки" main.py
 	-F для одного файла
 	-w для неконсольных программ
 	-i для установки собственной иконки
