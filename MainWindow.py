@@ -12,6 +12,7 @@ import os
 import subprocess
 
 from resources import logos
+from resources import OrangeBackgroundResources
 from resources import MainWindowResources
 from resources import MainWindowResourcesResize
 from OtherWindow import Ui_OtherWindow
@@ -21,13 +22,16 @@ from Karatau import Ui_Karatau
 from CPPR import  Ui_CPPR
 from AP import Ui_AP
 from GBK import Ui_GBK
+from Proizvodstvo import Ui_Proizvodstvo
 from UnderConstruction import Ui_UnderConstruction
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(760, 513)
+        MainWindow.setMaximumSize(1050, 700)
+        MainWindow.setMinimumSize(800, 600)
+        MainWindow.resize(800, 600)
         MainWindow.setStyleSheet("QWidget{\n"
 "background-color: rgb(65, 102, 245);\n"
 "background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)\n"
@@ -35,6 +39,7 @@ class Ui_MainWindow(object):
         self.i = 1
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+
 
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
@@ -150,12 +155,14 @@ class Ui_MainWindow(object):
         self.goToSiteButton = QtWidgets.QPushButton(self.centralwidget)
         self.goToSiteButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:8px;\n"
-"font: 80 10pt \"Arial\" ;\n"
+"font: 80 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -165,7 +172,8 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.goToSiteButton.setObjectName("goToSiteButton")
-        self.goToSiteButton.clicked.connect(self.goToSite) #функция в другом модуле
+        self.goToSiteButton.clicked.connect(self.goToSite)
+        self.goToSiteButton.setMinimumSize(QtCore.QSize(110, 35))
 
         self.gridLayout_2.addWidget(self.goToSiteButton, 1, 4, 1, 1)
         self.emptySpaceLabel = QtWidgets.QLabel(self.centralwidget)
@@ -182,6 +190,7 @@ class Ui_MainWindow(object):
         self.modeLabel = QtWidgets.QLabel(self.centralwidget)
         self.modeLabel.setMinimumSize(QtCore.QSize(35, 24))
         self.modeLabel.setStyleSheet("QLabel{\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "font: 75 14pt \"Segoe UI Emoji\";\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(246, 250, 5);\n"
@@ -223,12 +232,14 @@ class Ui_MainWindow(object):
         self.welcomeVideoButton = QtWidgets.QPushButton(self.centralwidget)
         self.welcomeVideoButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -250,12 +261,14 @@ class Ui_MainWindow(object):
         self.gtpMapButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(246, 250, 5);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"                                        
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
 "color:rgb(0, 0, 05);\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"                                        
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
 "}\n"
@@ -272,12 +285,14 @@ class Ui_MainWindow(object):
         self.cpprMapButton.setMinimumSize(QtCore.QSize(0, 30))
         self.cpprMapButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"                                         
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"                                         
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -295,12 +310,15 @@ class Ui_MainWindow(object):
         self.apMapButton.setMinimumSize(QtCore.QSize(0, 30))
         self.apMapButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"                                       
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"                                       
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -323,15 +341,17 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.line_3)
 
         self.goToKaratauMapButton = QtWidgets.QPushButton(self.centralwidget)
-        self.goToKaratauMapButton.setMinimumSize(QtCore.QSize(0, 50))
+        self.goToKaratauMapButton.setMinimumSize(QtCore.QSize(0, 80))
         self.goToKaratauMapButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(246, 250, 5);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
-"font: 14pt \"Segoe UI Emoji\" ;\n"
+"font: 18pt \"Segoe UI Emoji\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -368,8 +388,8 @@ class Ui_MainWindow(object):
         self.menuMaps = QtWidgets.QMenu(self.menubar)
         self.menuMaps.setObjectName("menuMaps")
 
-        self.menuAboutUs = QtWidgets.QMenu(self.menubar)
-        self.menuAboutUs.setObjectName("menuAboutUs")
+        #self.menuAboutUs = QtWidgets.QMenu(self.menubar)
+        #self.menuAboutUs.setObjectName("menuAboutUs")
 
         self.menuObjects = QtWidgets.QMenu(self.menubar)
         self.menuObjects.setObjectName("menuObjects")
@@ -382,9 +402,6 @@ class Ui_MainWindow(object):
 
         self.menuDepartments = QtWidgets.QMenu(self.menubar)
         self.menuDepartments.setObjectName("menuDepartments")
-
-        self.menuWhatIsIt = QtWidgets.QMenu(self.menubar)
-        self.menuWhatIsIt.setObjectName("menuWhatIsIt")
 
         MainWindow.setMenuBar(self.menubar)
 
@@ -458,10 +475,10 @@ class Ui_MainWindow(object):
         self.menuDepartments.addAction(self.SGE)
         self.menuDepartments.addAction(self.SGM)
         self.menubar.addAction(self.menuMaps.menuAction())
-        self.menubar.addAction(self.menuAboutUs.menuAction())
+        #self.menubar.addAction(self.menuAboutUs.menuAction())
         self.menubar.addAction(self.menuObjects.menuAction())
         self.menubar.addAction(self.menuDepartments.menuAction())
-        self.menubar.addAction(self.menuWhatIsIt.menuAction())
+
 
 
         self.retranslateUi(MainWindow)
@@ -585,24 +602,23 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.wlcomeToAppLabel.setText(_translate("MainWindow", "  Добро пожаловать в интерактивный гайд по руднику Каратау     "))
+        self.wlcomeToAppLabel.setText(_translate("MainWindow", "  Добро пожаловать на рудник Каратау     "))
         self.goToSiteButton.setText(_translate("MainWindow", "Перейти на сайт"))
         self.modeLabel.setText(_translate("MainWindow", "        Режим"))
         self.workerRadioButton.setText(_translate("MainWindow", "Сотрудник"))
         self.guestRadioButton.setText(_translate("MainWindow", "Гость"))
-        self.welcomeVideoButton.setText(_translate("MainWindow", "Приветствие    "))
+        self.welcomeVideoButton.setText(_translate("MainWindow", " Приветствие    "))
         self.gtpMapButton.setText(_translate("MainWindow", "ГТП"))
         self.cpprMapButton.setText(_translate("MainWindow", "ЦППР"))
         self.apMapButton.setText(_translate("MainWindow", "АП"))
         self.goToKaratauMapButton.setText(_translate("MainWindow", "Карта"))
         #menu widget
         self.menuMaps.setTitle(_translate("MainWindow", "Карты"))
-        self.menuAboutUs.setTitle(_translate("MainWindow", "О нас"))
+        #self.menuAboutUs.setTitle(_translate("MainWindow", "О нас"))
         self.menuObjects.setTitle(_translate("MainWindow", "Цеха и объекты"))
         self.menuActionGTP.setTitle(_translate("MainWindow", "ГТП"))
         self.menuActionFKhL.setTitle(_translate("MainWindow", "ФХЛ"))
         self.menuDepartments.setTitle(_translate("MainWindow", "Службы"))
-        self.menuWhatIsIt.setTitle(_translate("MainWindow", "Что это такое?"))
         self.actionGlobalMap.setText(_translate("MainWindow", "Глобальная"))
         self.actionCPPR.setText(_translate("MainWindow", "ЦППР"))
         self.actionAP.setText(_translate("MainWindow", "АП"))

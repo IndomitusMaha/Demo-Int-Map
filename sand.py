@@ -10,7 +10,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from resources import GTPResources
-from resources import MainWindowResources
 from resources import logos
 from resources import OrangeBackgroundResources
 from UPRR import Ui_UPRR
@@ -40,7 +39,7 @@ class Ui_GTPPoligon(object):
         self.label.setObjectName("label")
 
         self.uPRRButton = QtWidgets.QPushButton(self.centralwidget)
-        self.uPRRButton.setGeometry(QtCore.QRect(610, 170, 81, 40))
+        self.uPRRButton.setGeometry(QtCore.QRect(610, 170, 71, 30))
         self.uPRRButton.setMinimumSize(QtCore.QSize(0, 30))
         self.uPRRButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
@@ -50,7 +49,6 @@ class Ui_GTPPoligon(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
-"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -63,7 +61,7 @@ class Ui_GTPPoligon(object):
         self.uPRRButton.clicked.connect(self.uprr)
 
         self.uPVRButton = QtWidgets.QPushButton(self.centralwidget)
-        self.uPVRButton.setGeometry(QtCore.QRect(480, 80, 81, 40))
+        self.uPVRButton.setGeometry(QtCore.QRect(480, 80, 71, 30))
         self.uPVRButton.setMinimumSize(QtCore.QSize(0, 30))
         self.uPVRButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
@@ -73,7 +71,6 @@ class Ui_GTPPoligon(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
-"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -83,10 +80,8 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.uPVRButton.setObjectName("uPVRButton")
-        self.uPVRButton.clicked.connect(self.underConstruction)
-
         self.uPPRButton = QtWidgets.QPushButton(self.centralwidget)
-        self.uPPRButton.setGeometry(QtCore.QRect(130, 170, 71, 40))
+        self.uPPRButton.setGeometry(QtCore.QRect(130, 170, 61, 30))
         self.uPPRButton.setMinimumSize(QtCore.QSize(0, 30))
         self.uPPRButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
@@ -105,10 +100,8 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.uPPRButton.setObjectName("uPPRButton")
-        self.uPPRButton.clicked.connect(self.underConstruction)
-
         self.sZhRButton = QtWidgets.QPushButton(self.centralwidget)
-        self.sZhRButton.setGeometry(QtCore.QRect(670, 60, 81, 40))
+        self.sZhRButton.setGeometry(QtCore.QRect(670, 60, 71, 30))
         self.sZhRButton.setMinimumSize(QtCore.QSize(0, 30))
         self.sZhRButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
@@ -127,22 +120,17 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.sZhRButton.setObjectName("sZhRButton")
-        self.sZhRButton.clicked.connect(self.underConstruction)
-
         self.gtpMapButton_5 = QtWidgets.QPushButton(self.centralwidget)
-        self.gtpMapButton_5.setGeometry(QtCore.QRect(260, 110, 181, 40))
+        self.gtpMapButton_5.setGeometry(QtCore.QRect(260, 110, 101, 30))
         self.gtpMapButton_5.setMinimumSize(QtCore.QSize(0, 30))
         self.gtpMapButton_5.setStyleSheet("QPushButton{\n"
-
 "color: rgb(0, 0, 0);\n"
-"background-image: url(:/arrow right/Karatau blue background.png);"
 "background-color: rgb(65, 102, 245);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
-"font: 100 14pt \"Arial\" ;\n"
+"font: 100 10pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
-"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -152,10 +140,8 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.gtpMapButton_5.setObjectName("gtpMapButton_5")
-        self.gtpMapButton_5.clicked.connect(self.underConstruction)
-
         self.gtpMapButton_6 = QtWidgets.QPushButton(self.centralwidget)
-        self.gtpMapButton_6.setGeometry(QtCore.QRect(60, 10, 81, 40))
+        self.gtpMapButton_6.setGeometry(QtCore.QRect(60, 10, 71, 30))
         self.gtpMapButton_6.setMinimumSize(QtCore.QSize(0, 30))
         self.gtpMapButton_6.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
@@ -174,8 +160,6 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.gtpMapButton_6.setObjectName("gtpMapButton_6")
-        self.gtpMapButton_6.clicked.connect(self.underConstruction)
-
         self.label.raise_()
         self.uPPRButton.raise_()
         self.sZhRButton.raise_()
@@ -210,7 +194,7 @@ class Ui_GTPPoligon(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Полигон"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.uPRRButton.setText(_translate("MainWindow", "УПРР"))
         self.uPVRButton.setText(_translate("MainWindow", "УПВР"))
         self.uPPRButton.setText(_translate("MainWindow", "УППР"))

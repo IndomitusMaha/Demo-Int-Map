@@ -11,6 +11,7 @@ import os
 from PyQt5 import QtCore, QtGui, QtWidgets
 from resources import GTPResources
 from resources import logos
+from resources import OrangeBackgroundResources
 
 
 class Ui_KUB5(object):
@@ -18,8 +19,8 @@ class Ui_KUB5(object):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(517, 513)
-        MainWindow.setMinimumSize(QtCore.QSize(517, 513))
-        MainWindow.setMaximumSize(QtCore.QSize(517, 513))
+        MainWindow.setMinimumSize(QtCore.QSize(517, 490))
+        MainWindow.setMaximumSize(QtCore.QSize(517, 490))
         MainWindow.setStyleSheet("QWidget{\n"
 "background-color: rgb(65, 102, 245);\n"
 "background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)\n"
@@ -28,16 +29,18 @@ class Ui_KUB5(object):
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
         self.manualButton = QtWidgets.QPushButton(self.centralwidget)
-        self.manualButton.setGeometry(QtCore.QRect(10, 10, 131, 31))
+        self.manualButton.setGeometry(QtCore.QRect(10, 30, 146, 31))
         self.manualButton.setMinimumSize(QtCore.QSize(0, 30))
         self.manualButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -49,16 +52,18 @@ class Ui_KUB5(object):
         self.manualButton.setObjectName("manualButton")
         self.manualButton.clicked.connect(self.manual)
         self.purposeButton = QtWidgets.QPushButton(self.centralwidget)
-        self.purposeButton.setGeometry(QtCore.QRect(10, 60, 131, 31))
+        self.purposeButton.setGeometry(QtCore.QRect(10, 80, 146, 31))
         self.purposeButton.setMinimumSize(QtCore.QSize(0, 30))
         self.purposeButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -69,16 +74,18 @@ class Ui_KUB5(object):
 "}")
         self.purposeButton.setObjectName("purposeButton")
         self.tipsButton = QtWidgets.QPushButton(self.centralwidget)
-        self.tipsButton.setGeometry(QtCore.QRect(10, 110, 131, 31))
+        self.tipsButton.setGeometry(QtCore.QRect(10, 130, 146, 31))
         self.tipsButton.setMinimumSize(QtCore.QSize(0, 30))
         self.tipsButton.setStyleSheet("QPushButton{\n"
 "color: rgb(0, 0, 0);\n"
+"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
 "background-color: rgb(246, 250, 5);\n"
 "border-style:outset;\n"
 "border-radius:10px;\n"
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -120,10 +127,10 @@ class Ui_KUB5(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.manualButton.setText(_translate("MainWindow", "Мануал"))
-        self.purposeButton.setText(_translate("MainWindow", "Назначение"))
-        self.tipsButton.setText(_translate("MainWindow", "Подсказки"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "KУБ 5"))
+        self.manualButton.setText(_translate("MainWindow", " Мануал"))
+        self.purposeButton.setText(_translate("MainWindow", " Назначение"))
+        self.tipsButton.setText(_translate("MainWindow", " Подсказки"))
 """""
     def manual(self):
         import os

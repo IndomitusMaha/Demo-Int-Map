@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from resources import OrangeBackgroundResources
 from resources import GTPResources
 from resources import MapsResizeResources
 from CPPR import Ui_CPPR
@@ -48,7 +49,7 @@ class Ui_Proizvodstvo(object):
 
         self.cpprButton = QtWidgets.QPushButton(self.centralwidget)
         self.cpprButton.setEnabled(True)
-        self.cpprButton.setGeometry(QtCore.QRect(490, 240, 71, 30))
+        self.cpprButton.setGeometry(QtCore.QRect(490, 240, 81, 40))
         self.cpprButton.setMinimumSize(QtCore.QSize(0, 30))
         self.cpprButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -59,6 +60,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -72,7 +74,7 @@ class Ui_Proizvodstvo(object):
         self.cpprButton.clicked.connect(self.cppr)
 
         self.centSkladLabel = QtWidgets.QLabel(self.centralwidget)
-        self.centSkladLabel.setGeometry(QtCore.QRect(490, 370, 121, 21))
+        self.centSkladLabel.setGeometry(QtCore.QRect(490, 370, 150, 26))
         self.centSkladLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -81,7 +83,7 @@ class Ui_Proizvodstvo(object):
 
         self.tnsButton = QtWidgets.QPushButton(self.centralwidget)
         self.tnsButton.setEnabled(True)
-        self.tnsButton.setGeometry(QtCore.QRect(310, 50, 61, 30))
+        self.tnsButton.setGeometry(QtCore.QRect(310, 50, 71, 40))
         self.tnsButton.setMinimumSize(QtCore.QSize(0, 30))
         self.tnsButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -92,6 +94,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -106,7 +109,7 @@ class Ui_Proizvodstvo(object):
 
         self.apButton = QtWidgets.QPushButton(self.centralwidget)
         self.apButton.setEnabled(True)
-        self.apButton.setGeometry(QtCore.QRect(690, 300, 71, 30))
+        self.apButton.setGeometry(QtCore.QRect(690, 300, 81, 40))
         self.apButton.setMinimumSize(QtCore.QSize(0, 30))
         self.apButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -117,6 +120,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -131,7 +135,7 @@ class Ui_Proizvodstvo(object):
 
         self.ssrButton = QtWidgets.QPushButton(self.centralwidget)
         self.ssrButton.setEnabled(True)
-        self.ssrButton.setGeometry(QtCore.QRect(350, 380, 71, 30))
+        self.ssrButton.setGeometry(QtCore.QRect(350, 380, 81, 40))
         self.ssrButton.setMinimumSize(QtCore.QSize(0, 30))
         self.ssrButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -142,6 +146,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -156,7 +161,7 @@ class Ui_Proizvodstvo(object):
 
         self.fkhlButton = QtWidgets.QPushButton(self.centralwidget)
         self.fkhlButton.setEnabled(True)
-        self.fkhlButton.setGeometry(QtCore.QRect(170, 290, 71, 30))
+        self.fkhlButton.setGeometry(QtCore.QRect(170, 290, 81, 40))
         self.fkhlButton.setMinimumSize(QtCore.QSize(0, 30))
         self.fkhlButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -167,6 +172,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -181,7 +187,7 @@ class Ui_Proizvodstvo(object):
 
         self.szhrButton = QtWidgets.QPushButton(self.centralwidget)
         self.szhrButton.setEnabled(True)
-        self.szhrButton.setGeometry(QtCore.QRect(320, 150, 61, 30))
+        self.szhrButton.setGeometry(QtCore.QRect(320, 150, 71, 40))
         self.szhrButton.setMinimumSize(QtCore.QSize(0, 30))
         self.szhrButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -192,6 +198,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -206,7 +213,7 @@ class Ui_Proizvodstvo(object):
 
         self.cnsButton = QtWidgets.QPushButton(self.centralwidget)
         self.cnsButton.setEnabled(True)
-        self.cnsButton.setGeometry(QtCore.QRect(450, 140, 61, 30))
+        self.cnsButton.setGeometry(QtCore.QRect(450, 140, 71, 40))
         self.cnsButton.setMinimumSize(QtCore.QSize(0, 30))
         self.cnsButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -217,6 +224,7 @@ class Ui_Proizvodstvo(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -238,7 +246,7 @@ class Ui_Proizvodstvo(object):
         self.hbkLabel.setObjectName("hbkLabel")
 
         self.kppLabel = QtWidgets.QLabel(self.centralwidget)
-        self.kppLabel.setGeometry(QtCore.QRect(30, 190, 61, 21))
+        self.kppLabel.setGeometry(QtCore.QRect(30, 190, 71, 26))
         self.kppLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -246,7 +254,7 @@ class Ui_Proizvodstvo(object):
         self.kppLabel.setObjectName("kppLabel")
 
         self.techVodaLabel = QtWidgets.QLabel(self.centralwidget)
-        self.techVodaLabel.setGeometry(QtCore.QRect(240, 230, 91, 21))
+        self.techVodaLabel.setGeometry(QtCore.QRect(240, 230, 111, 26))
         self.techVodaLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -254,7 +262,7 @@ class Ui_Proizvodstvo(object):
         self.techVodaLabel.setObjectName("techVodaLabel")
 
         self.avtoboksLabel = QtWidgets.QLabel(self.centralwidget)
-        self.avtoboksLabel.setGeometry(QtCore.QRect(170, 180, 91, 21))
+        self.avtoboksLabel.setGeometry(QtCore.QRect(170, 180, 111, 26))
         self.avtoboksLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -262,7 +270,7 @@ class Ui_Proizvodstvo(object):
         self.avtoboksLabel.setObjectName("avtoboksLabel")
 
         self.abkLabel = QtWidgets.QLabel(self.centralwidget)
-        self.abkLabel.setGeometry(QtCore.QRect(130, 230, 51, 21))
+        self.abkLabel.setGeometry(QtCore.QRect(130, 230, 61, 26))
         self.abkLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -270,7 +278,7 @@ class Ui_Proizvodstvo(object):
         self.abkLabel.setObjectName("abkLabel")
 
         self.sukhSkladLabel = QtWidgets.QLabel(self.centralwidget)
-        self.sukhSkladLabel.setGeometry(QtCore.QRect(610, 150, 111, 21))
+        self.sukhSkladLabel.setGeometry(QtCore.QRect(610, 150, 141, 26))
         self.sukhSkladLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -278,7 +286,7 @@ class Ui_Proizvodstvo(object):
         self.sukhSkladLabel.setObjectName("sukhSkladLabel")
 
         self.disaktivaciaLabel = QtWidgets.QLabel(self.centralwidget)
-        self.disaktivaciaLabel.setGeometry(QtCore.QRect(670, 210, 121, 21))
+        self.disaktivaciaLabel.setGeometry(QtCore.QRect(635, 210, 161, 26))
         self.disaktivaciaLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -336,7 +344,7 @@ class Ui_Proizvodstvo(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Каратау"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Производство"))
         self.cpprButton.setText(_translate("MainWindow", "ЦППР"))
         self.centSkladLabel.setText(_translate("MainWindow", "  Цент. Склад"))
         self.tnsButton.setText(_translate("MainWindow", "ТНС"))
@@ -347,11 +355,11 @@ class Ui_Proizvodstvo(object):
         self.cnsButton.setText(_translate("MainWindow", "ЦНС"))
         self.hbkLabel.setText(_translate("MainWindow", "  ХБК"))
         self.kppLabel.setText(_translate("MainWindow", "  КПП"))
-        self.techVodaLabel.setText(_translate("MainWindow", "Тех. Вода"))
+        self.techVodaLabel.setText(_translate("MainWindow", " Тех. Вода"))
         self.avtoboksLabel.setText(_translate("MainWindow", " Автобокс"))
         self.abkLabel.setText(_translate("MainWindow", " АБК"))
-        self.sukhSkladLabel.setText(_translate("MainWindow", "Сухой склад"))
-        self.disaktivaciaLabel.setText(_translate("MainWindow", "Дизактивация"))
+        self.sukhSkladLabel.setText(_translate("MainWindow", " Сухой склад"))
+        self.disaktivaciaLabel.setText(_translate("MainWindow", " Дизактивация"))
 
 
 if __name__ == "__main__":

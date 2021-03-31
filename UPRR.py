@@ -18,9 +18,10 @@ class Ui_UPRR(object):
     def setupUi(self, MainWindow):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
+        MainWindow.setWindowTitle("УПРР")
         MainWindow.resize(661, 494)
-        MainWindow.setMinimumSize(QtCore.QSize(661, 494))
-        MainWindow.setMaximumSize(QtCore.QSize(661, 494))
+        MainWindow.setMinimumSize(QtCore.QSize(661, 480))
+        MainWindow.setMaximumSize(QtCore.QSize(661, 480))
         MainWindow.setStyleSheet("QWidget{\n"
 "background-color: rgb(65, 102, 245);\n"
 "background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)\n"
@@ -157,7 +158,7 @@ class Ui_UPRR(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "УПРР"))
         self.kUB5Button.setText(_translate("MainWindow", "КУБ-5"))
         """""
         self.menuMaps.setTitle(_translate("MainWindow", "Карты"))

@@ -18,16 +18,15 @@ class ErorWindow(QWidget):
 
     def messageBox(self):
         mBox = QMessageBox.information(self, "Ошибка", "Вы ввели неправильный логин или пароль")
-        sys.exit()
+        #sys.exit()
         #просто заебошь лэйбел
-
 
 
 def main():
     App = QApplication(sys.argv)
     window=ErorWindow()
     #sys.exit(App.exec_())
-    sys.exit()
+    #sys.exit()
 
 if __name__ == '__main__':
     main()

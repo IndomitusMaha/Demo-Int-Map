@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from resources import GTPResources
 from resources import MapsResizeResources
+from resources import OrangeBackgroundResources
 from GBK import Ui_GBK
 
 class Ui_Poselok(object):
@@ -36,17 +37,19 @@ class Ui_Poselok(object):
         self.labelMap.setPixmap(QtGui.QPixmap(":/MapsResize/images/MapsУмень/Вахтовый Поселок.jpg"))
         self.labelMap.setScaledContents(True)
         self.labelMap.setObjectName("labelMap")
+
         self.obshezhitieLabel = QtWidgets.QLabel(self.centralwidget)
-        self.obshezhitieLabel.setGeometry(QtCore.QRect(150, 340, 121, 21))
+        self.obshezhitieLabel.setGeometry(QtCore.QRect(150, 340, 145, 26))
         self.obshezhitieLabel.setMaximumSize(QtCore.QSize(700, 16777215))
         self.obshezhitieLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
 "font: 100 14pt \"Arial\" ")
         self.obshezhitieLabel.setObjectName("obshezhitieLabel")
+
         self.gbkButton = QtWidgets.QPushButton(self.centralwidget)
         self.gbkButton.setEnabled(True)
-        self.gbkButton.setGeometry(QtCore.QRect(540, 350, 61, 30))
+        self.gbkButton.setGeometry(QtCore.QRect(540, 350, 71, 40))
         self.gbkButton.setMinimumSize(QtCore.QSize(0, 30))
         self.gbkButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -57,6 +60,7 @@ class Ui_Poselok(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -70,21 +74,21 @@ class Ui_Poselok(object):
         self.gbkButton.clicked.connect(self.gbk)
 
         self.sportKompleksLabel = QtWidgets.QLabel(self.centralwidget)
-        self.sportKompleksLabel.setGeometry(QtCore.QRect(200, 250, 201, 21))
+        self.sportKompleksLabel.setGeometry(QtCore.QRect(200, 250, 251, 26))
         self.sportKompleksLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
 "font: 100 14pt \"Arial\" ")
         self.sportKompleksLabel.setObjectName("sportKompleksLabel")
         self.kottedzhiLabel = QtWidgets.QLabel(self.centralwidget)
-        self.kottedzhiLabel.setGeometry(QtCore.QRect(390, 140, 101, 21))
+        self.kottedzhiLabel.setGeometry(QtCore.QRect(390, 140, 121, 26))
         self.kottedzhiLabel.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
 "font: 100 14pt \"Arial\" ")
         self.kottedzhiLabel.setObjectName("kottedzhiLabel")
         self.techVodaLabel_2 = QtWidgets.QLabel(self.centralwidget)
-        self.techVodaLabel_2.setGeometry(QtCore.QRect(580, 200, 91, 21))
+        self.techVodaLabel_2.setGeometry(QtCore.QRect(580, 200, 111, 26))
         self.techVodaLabel_2.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -132,9 +136,9 @@ class Ui_Poselok(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Вахтовый поселок"))
         self.obshezhitieLabel.setText(_translate("MainWindow", " Общежитие"))
         self.gbkButton.setText(_translate("MainWindow", "ГБК"))
-        self.sportKompleksLabel.setText(_translate("MainWindow", "Спортивный комплекс"))
+        self.sportKompleksLabel.setText(_translate("MainWindow", " Спортивный комплекс"))
         self.kottedzhiLabel.setText(_translate("MainWindow", "  Коттеджи"))
-        self.techVodaLabel_2.setText(_translate("MainWindow", "Тех. Вода"))
+        self.techVodaLabel_2.setText(_translate("MainWindow", " Тех. Вода"))
         self.actionGlobalMap.setText(_translate("MainWindow", "Глобальная"))
         self.actionCPPR.setText(_translate("MainWindow", "ЦППР"))
         self.actionAP.setText(_translate("MainWindow", "АП"))

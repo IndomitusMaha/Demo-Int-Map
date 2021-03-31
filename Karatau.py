@@ -14,6 +14,7 @@ from resources import MapsResizeResources
 from Proizvodstvo import Ui_Proizvodstvo
 from Poselok import Ui_Poselok
 
+from resources import OrangeBackgroundResources
 
 class Ui_Karatau(object):
     def setupUi(self, MainWindow):
@@ -43,7 +44,7 @@ class Ui_Karatau(object):
 
         self.proizvodstvoButton = QtWidgets.QPushButton(self.centralwidget)
         self.proizvodstvoButton.setEnabled(True)
-        self.proizvodstvoButton.setGeometry(QtCore.QRect(450, 90, 141, 31))
+        self.proizvodstvoButton.setGeometry(QtCore.QRect(450, 90, 151, 31))
         self.proizvodstvoButton.setMinimumSize(QtCore.QSize(0, 30))
         self.proizvodstvoButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -54,6 +55,7 @@ class Ui_Karatau(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -68,7 +70,7 @@ class Ui_Karatau(object):
 
         self.vakhtoviiPoselokButton = QtWidgets.QPushButton(self.centralwidget)
         self.vakhtoviiPoselokButton.setEnabled(True)
-        self.vakhtoviiPoselokButton.setGeometry(QtCore.QRect(50, 240, 181, 31))
+        self.vakhtoviiPoselokButton.setGeometry(QtCore.QRect(40, 240, 211, 31))
         self.vakhtoviiPoselokButton.setMinimumSize(QtCore.QSize(0, 30))
         self.vakhtoviiPoselokButton.setStyleSheet("QPushButton{\n"
 "background-image: url(:/arrow right/Karatau blue background.png);\n"
@@ -79,6 +81,7 @@ class Ui_Karatau(object):
 "font: 100 14pt \"Arial\" ;\n"
 "}\n"
 "QPushButton:hover{\n"
+"background-image: url(:/orange/images/orangebackgroundbutton.jpg);"                                                  
 "color:rgb(0, 0, 05);\n"
 "background-color: rgb(245, 169, 17);\n"
 "border-radius:5px;\n"
@@ -92,7 +95,7 @@ class Ui_Karatau(object):
         self.vakhtoviiPoselokButton.clicked.connect(self.poselok)
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(90, 130, 201, 31))
+        self.label.setGeometry(QtCore.QRect(50, 130, 241, 31))
         self.label.setStyleSheet("background-image: url(:/arrow right/Karatau blue background.png);\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(65, 102, 245);\n"
@@ -119,7 +122,7 @@ class Ui_Karatau(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Karatau"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Kаратау"))
         self.proizvodstvoButton.setText(_translate("MainWindow", "Произодство"))
         self.vakhtoviiPoselokButton.setText(_translate("MainWindow", "Вахтовый Поселок"))
         self.label.setText(_translate("MainWindow", "  Поселок РосБорМаш"))
