@@ -126,28 +126,9 @@ class Ui_AP(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.podgotovkaButton.setObjectName("podgotovkaButton")
-        self.ssrButton = QtWidgets.QPushButton(self.centralwidget)
-        self.ssrButton.setGeometry(QtCore.QRect(10, 250, 171, 31))
-        self.ssrButton.setMinimumSize(QtCore.QSize(0, 30))
-        self.ssrButton.setStyleSheet("QPushButton{\n"
-"color: rgb(0, 0, 0);\n"
-"background-color: rgb(246, 250, 5);\n"
-"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
-"border-style:outset;\n"
-"border-radius:10px;\n"
-"font: 100 14pt \"Arial\" ;\n"
-"}\n"
-"QPushButton:hover{\n"
-"color:rgb(0, 0, 05);\n"
-"background-color: rgb(245, 169, 17);\n"
-"border-radius:5px;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"color:rgb(0, 0, 0);\n"
-"background-color: rgb(255, 148, 164);\n"
-"}")
-        self.ssrButton.setObjectName("ssrButton")
+
         MainWindow.setCentralWidget(self.centralwidget)
+
         self.actionGlobalMap = QtWidgets.QAction(MainWindow)
         self.actionGlobalMap.setObjectName("actionGlobalMap")
         self.actionCPPR = QtWidgets.QAction(MainWindow)
@@ -184,7 +165,6 @@ class Ui_AP(object):
         self.sorbciaButton.setText(_translate("MainWindow", "Каскад"))
         self.desorbciaButton.setText(_translate("MainWindow", "Фильтр-пресс"))
         self.podgotovkaButton.setText(_translate("MainWindow", "Подготовка"))
-        self.ssrButton.setText(_translate("MainWindow", "ССР"))
         self.actionGlobalMap.setText(_translate("MainWindow", "Глобальная"))
         self.actionCPPR.setText(_translate("MainWindow", "ЦППР"))
         self.actionAP.setText(_translate("MainWindow", "АП"))
