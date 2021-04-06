@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="ASUTP">
+    <file>../images/АСУТП/АСУТП.jpg</file>
+  </qresource>
+</RCC>
