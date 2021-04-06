@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>880</width>
-    <height>784</height>
+    <width>875</width>
+    <height>539</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -56,14 +56,14 @@ border-radius:10px;
        <widget class="QLabel" name="imageLabel">
         <property name="minimumSize">
          <size>
-          <width>400</width>
-          <height>645</height>
+          <width>645</width>
+          <height>400</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>1100</width>
-          <height>16777215</height>
+          <width>845</width>
+          <height>600</height>
          </size>
         </property>
         <property name="styleSheet">
