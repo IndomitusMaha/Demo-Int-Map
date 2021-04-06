@@ -10,6 +10,12 @@
     <height>539</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>1000</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -308,7 +314,7 @@ background-color: rgb(255, 148, 164);
 }</string>
         </property>
         <property name="text">
-         <string>  Типы оборудования  </string>
+         <string>  Осн. оборудование  </string>
         </property>
        </widget>
       </item>
