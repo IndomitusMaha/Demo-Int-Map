@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>883</width>
+    <width>880</width>
     <height>784</height>
    </rect>
   </property>
@@ -124,7 +124,7 @@ background-color: rgb(255, 148, 164);
 }</string>
           </property>
           <property name="text">
-           <string>Перейти на сайт</string>
+           <string>   Перейти на сайт   </string>
           </property>
          </widget>
         </item>
@@ -181,7 +181,7 @@ background-color: rgb(255, 148, 164);
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="aSUTPButton">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -209,7 +209,7 @@ background-color: rgb(255, 148, 164);
 }</string>
         </property>
         <property name="text">
-         <string> PushButton </string>
+         <string>АСУ ТП</string>
         </property>
        </widget>
       </item>
