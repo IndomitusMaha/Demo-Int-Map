@@ -18,7 +18,7 @@ from resources import MainWindowResourcesResize
 from resources import ASUTPResources
 
 from Karatau import Ui_Karatau
-from MainWindow import Ui_MainWindow
+from CPPR import Ui_CPPR
 
 
 class Ui_ASUTP(object):
@@ -26,7 +26,7 @@ class Ui_ASUTP(object):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(875, 539)
-        MainWindow.setMaximumSize(QtCore.QSize(1200, 1000))
+        MainWindow.setMaximumSize(QtCore.QSize(1400, 1000))
         MainWindow.setStyleSheet("QWidget{\n"
 "background-color: rgb(65, 102, 245);\n"
 "background-image: url(:/logos/karatau_logo_small___копия-removebg-preview.png)\n"
@@ -35,8 +35,10 @@ class Ui_ASUTP(object):
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+
+        self.verticalLayout_2 = QtWidgets.QGridLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
+
         self.wlcomeToAppLabel = QtWidgets.QLabel(self.centralwidget)
         self.wlcomeToAppLabel.setMinimumSize(QtCore.QSize(0, 50))
         self.wlcomeToAppLabel.setMaximumSize(QtCore.QSize(16777215, 50))
@@ -49,20 +51,23 @@ class Ui_ASUTP(object):
 "\n"
 "}")
         self.wlcomeToAppLabel.setObjectName("wlcomeToAppLabel")
-        self.verticalLayout_2.addWidget(self.wlcomeToAppLabel)
+        self.verticalLayout_2.addWidget(self.wlcomeToAppLabel, 0, 0)
+
         self.imageLabel = QtWidgets.QLabel(self.centralwidget)
+        #self.imageLabel.setGeometry(1000, 100, 645, 400)
         self.imageLabel.setMinimumSize(QtCore.QSize(645, 400))
-        self.imageLabel.setMaximumSize(QtCore.QSize(845, 600))
-        self.imageLabel.setStyleSheet("background-image: url(:/ASUTP/images/АСУТП/АСУТП.jpg)")
+        self.imageLabel.setMaximumSize(QtCore.QSize(1100, 700))
         self.imageLabel.setText("")
         self.imageLabel.setPixmap(QtGui.QPixmap(":/ASUTP/images/АСУТП/АСУТП.jpg"))
         self.imageLabel.setScaledContents(True)
         self.imageLabel.setObjectName("imageLabel")
-        self.verticalLayout_2.addWidget(self.imageLabel)
+        self.verticalLayout_2.addWidget(self.imageLabel, 1, 0)
+
         self.gridLayout_2 = QtWidgets.QGridLayout()
         self.gridLayout_2.setObjectName("gridLayout_2")
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_2.addItem(spacerItem, 0, 0, 1, 1)
+
         self.goToSiteButton = QtWidgets.QPushButton(self.centralwidget)
         self.goToSiteButton.setMinimumSize(QtCore.QSize(110, 35))
         self.goToSiteButton.setStyleSheet("QPushButton{\n"
@@ -85,10 +90,14 @@ class Ui_ASUTP(object):
 "}")
         self.goToSiteButton.setObjectName("goToSiteButton")
         self.gridLayout_2.addWidget(self.goToSiteButton, 0, 1, 1, 1)
-        self.verticalLayout_2.addLayout(self.gridLayout_2)
+        self.goToSiteButton.clicked.connect(self.goToSite)
+
+        self.verticalLayout_2.addLayout(self.gridLayout_2, 2, 0)
+
         self.gridLayout.addLayout(self.verticalLayout_2, 0, 2, 1, 1)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
+
         self.goBackButton = QtWidgets.QPushButton(self.centralwidget)
         self.goBackButton.setMinimumSize(QtCore.QSize(0, 50))
         self.goBackButton.setStyleSheet("QPushButton{\n"
@@ -110,7 +119,7 @@ class Ui_ASUTP(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.goBackButton.setObjectName("goBackButton")
-        self.goBackButton.clicked.connect(self.goBack)
+        self.goBackButton.clicked.connect(self.cppr)
 
         self.verticalLayout.addWidget(self.goBackButton)
         spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -136,8 +145,9 @@ class Ui_ASUTP(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.aSUTPButton.setObjectName("aSUTPButton")
-
         self.verticalLayout.addWidget(self.aSUTPButton)
+        self.aSUTPButton.clicked.connect(self.asutp)
+
         self.deyatelnostButton = QtWidgets.QPushButton(self.centralwidget)
         self.deyatelnostButton.setMinimumSize(QtCore.QSize(0, 40))
         self.deyatelnostButton.setStyleSheet("QPushButton{\n"
@@ -160,6 +170,7 @@ class Ui_ASUTP(object):
 "}")
         self.deyatelnostButton.setObjectName("deyatelnostButton")
         self.verticalLayout.addWidget(self.deyatelnostButton)
+        self.deyatelnostButton.clicked.connect(self.deyatelnost)
 
         self.structuraButton = QtWidgets.QPushButton(self.centralwidget)
         self.structuraButton.setMinimumSize(QtCore.QSize(0, 40))
@@ -183,6 +194,7 @@ class Ui_ASUTP(object):
 "}")
         self.structuraButton.setObjectName("structuraButton")
         self.verticalLayout.addWidget(self.structuraButton)
+        self.structuraButton.clicked.connect(self.structura)
 
         self.typiOborMapButton = QtWidgets.QPushButton(self.centralwidget)
         self.typiOborMapButton.setMinimumSize(QtCore.QSize(0, 40))
@@ -206,6 +218,8 @@ class Ui_ASUTP(object):
 "}")
         self.typiOborMapButton.setObjectName("typiOborMapButton")
         self.verticalLayout.addWidget(self.typiOborMapButton)
+        self.typiOborMapButton.clicked.connect(self.oborudovanie)
+
         spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem2)
         self.line_3 = QtWidgets.QFrame(self.centralwidget)
@@ -244,78 +258,97 @@ class Ui_ASUTP(object):
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
         self.gridLayout.addWidget(self.line_2, 0, 1, 1, 1)
+
         MainWindow.setCentralWidget(self.centralwidget)
+
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setStyleSheet("")
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.actionGlobalMap = QtWidgets.QAction(MainWindow)
-        self.actionGlobalMap.setObjectName("actionGlobalMap")
-        self.actionCPPR = QtWidgets.QAction(MainWindow)
-        self.actionCPPR.setObjectName("actionCPPR")
-        self.actionAP = QtWidgets.QAction(MainWindow)
-        self.actionAP.setObjectName("actionAP")
-        self.actionGBK = QtWidgets.QAction(MainWindow)
-        self.actionGBK.setObjectName("actionGBK")
-        self.actionPoligon = QtWidgets.QAction(MainWindow)
-        self.actionPoligon.setObjectName("actionPoligon")
-        self.actionRaskomandirovka = QtWidgets.QAction(MainWindow)
-        self.actionRaskomandirovka.setObjectName("actionRaskomandirovka")
-        self.actionFKhLFirstFloor = QtWidgets.QAction(MainWindow)
-        self.actionFKhLFirstFloor.setObjectName("actionFKhLFirstFloor")
-        self.actionFKhLSecondFloor = QtWidgets.QAction(MainWindow)
-        self.actionFKhLSecondFloor.setObjectName("actionFKhLSecondFloor")
-        self.KIPiA = QtWidgets.QAction(MainWindow)
-        self.KIPiA.setCheckable(False)
-        self.KIPiA.setObjectName("KIPiA")
-        self.SGE = QtWidgets.QAction(MainWindow)
-        self.SGE.setObjectName("SGE")
-        self.SGM = QtWidgets.QAction(MainWindow)
-        self.SGM.setObjectName("SGM")
-        self.actionKaratauMap = QtWidgets.QAction(MainWindow)
-        self.actionKaratauMap.setObjectName("actionKaratauMap")
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def asutp(self):
+        self.imageLabel = QtWidgets.QLabel(self.centralwidget)
+        self.imageLabel.setMinimumSize(QtCore.QSize(645, 400))
+        self.imageLabel.setMaximumSize(QtCore.QSize(1100, 700))
+        self.imageLabel.setText("")
+        self.imageLabel.setPixmap(QtGui.QPixmap(":/ASUTP/images/АСУТП/АСУТП.jpg"))
+        self.imageLabel.setScaledContents(True)
+        self.imageLabel.setObjectName("imageLabel")
+        self.verticalLayout_2.addWidget(self.imageLabel, 1, 0)
+
+    def deyatelnost(self):
+        self.imageLabel = QtWidgets.QLabel(self.centralwidget)
+        self.imageLabel.setMinimumSize(QtCore.QSize(645, 400))
+        self.imageLabel.setMaximumSize(QtCore.QSize(1100, 700))
+        self.imageLabel.setPixmap(QtGui.QPixmap(":/ASUTP/images/АСУТП/Деятельность.png"))
+        self.imageLabel.setScaledContents(True)
+        self.imageLabel.setObjectName("imageLabel")
+        self.verticalLayout_2.addWidget(self.imageLabel, 1, 0)
+
+    def oborudovanie(self):
+        self.imageLabel = QtWidgets.QLabel(self.centralwidget)
+        self.imageLabel.setMinimumSize(QtCore.QSize(645, 400))
+        self.imageLabel.setMaximumSize(QtCore.QSize(1100, 700))
+        self.imageLabel.setStyleSheet("background-image: url(:/ASUTP/images/АСУТП/Оборудование.jpg)")
+        self.imageLabel.setText("")
+        self.imageLabel.setPixmap(QtGui.QPixmap(":/ASUTP/images/АСУТП/Оборудование.png"))
+        self.imageLabel.setScaledContents(True)
+        self.imageLabel.setObjectName("imageLabel")
+        self.verticalLayout_2.addWidget(self.imageLabel, 1, 0)
+
+    def structura(self):
+        self.imageLabel = QtWidgets.QLabel(self.centralwidget)
+        self.imageLabel.setMinimumSize(QtCore.QSize(645, 400))
+        self.imageLabel.setMaximumSize(QtCore.QSize(1100, 700))
+        self.imageLabel.setStyleSheet("background-image: url(:/ASUTP/images/АСУТП/Структура.jpg)")
+        self.imageLabel.setText("")
+        self.imageLabel.setPixmap(QtGui.QPixmap(":/ASUTP/images/АСУТП/Структура.png"))
+        self.imageLabel.setScaledContents(True)
+        self.imageLabel.setObjectName("imageLabel")
+        self.verticalLayout_2.addWidget(self.imageLabel, 1, 0)
+
+
+
+
 
     def karatauMap(self):
             self.window = QtWidgets.QMainWindow()
             self.ui = Ui_Karatau()
             self.ui.setupUi(self.window)
-            MainWindow.hide()
+           # MainWindow.hide()
             self.window.show()
 
 
-    def goBack(self):
+    def cppr(self):
             self.window = QtWidgets.QMainWindow()
-            self.ui = Ui_MainWindow()
+            self.ui = Ui_CPPR()
             self.ui.setupUi(self.window)
-            MainWindow.hide()
             self.window.show()
+
+    def goToSite(self):
+        script_path = os.path.abspath(__file__)
+        script_dir = os.path.split(script_path)[0]
+        rel_path = "resources//links//Karatau.url"
+        abs_file_path = os.path.join(script_dir, rel_path)
+        # os.startfile(abs_file_path)
+        # subprocess.call(abs_file_path, shell=True)
+        subprocess.Popen(["cmd", "/C", "start " + rel_path], shell=True)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Служба АСУ ТП"))
         self.wlcomeToAppLabel.setText(_translate("MainWindow", "   АСУ ТП - Автоматическая Система Управления Технологическим Процессом"))
         self.goToSiteButton.setText(_translate("MainWindow", "   Перейти на сайт   "))
-        self.goBackButton.setText(_translate("MainWindow", "    Назад    "))
+        self.goBackButton.setText(_translate("MainWindow", "  Местоположение  "))
         self.aSUTPButton.setText(_translate("MainWindow", "АСУ ТП"))
         self.deyatelnostButton.setText(_translate("MainWindow", "  Деятельность "))
         self.structuraButton.setText(_translate("MainWindow", "  Структура отдела  "))
         self.typiOborMapButton.setText(_translate("MainWindow", "  Осн. оборудование  "))
         self.goToKaratauMapButton.setText(_translate("MainWindow", "Карта"))
-        self.actionGlobalMap.setText(_translate("MainWindow", "Глобальная"))
-        self.actionCPPR.setText(_translate("MainWindow", "ЦППР"))
-        self.actionAP.setText(_translate("MainWindow", "АП"))
-        self.actionGBK.setText(_translate("MainWindow", "ГБК"))
-        self.actionPoligon.setText(_translate("MainWindow", "Полигон"))
-        self.actionRaskomandirovka.setText(_translate("MainWindow", "Раскомандировка"))
-        self.actionFKhLFirstFloor.setText(_translate("MainWindow", "Первый этаж"))
-        self.actionFKhLSecondFloor.setText(_translate("MainWindow", "Второй этаж"))
-        self.KIPiA.setText(_translate("MainWindow", "КИПиА"))
-        self.SGE.setText(_translate("MainWindow", "СГЭ"))
-        self.SGM.setText(_translate("MainWindow", "СГМ"))
-        self.actionKaratauMap.setText(_translate("MainWindow", "Каратау"))
+
 
 if __name__ == "__main__":
     import sys

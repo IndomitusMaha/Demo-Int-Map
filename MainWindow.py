@@ -19,9 +19,10 @@ from OtherWindow import Ui_OtherWindow
 from GTPPoligon import Ui_GTPPoligon
 from Global import Ui_GlobalMap
 from Karatau import Ui_Karatau
-from CPPR import  Ui_CPPR
+from CPPR import Ui_CPPR
 from AP import Ui_AP
 from GBK import Ui_GBK
+from ASUTP import Ui_ASUTP
 from Proizvodstvo import Ui_Proizvodstvo
 from UnderConstruction import Ui_UnderConstruction
 
@@ -61,6 +62,7 @@ class Ui_MainWindow(object):
         self.wlcomeToAppLabel.setObjectName("wlcomeToAppLabel")
         self.wlcomeToAppLabel.setMaximumSize(QtCore.QSize(1000, 100))
         self.verticalLayout_2.addWidget(self.wlcomeToAppLabel, 0, 0)
+
 
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
@@ -442,18 +444,11 @@ class Ui_MainWindow(object):
         self.actionFKhLSecondFloor.setObjectName("actionFKhLSecondFloor")
         self.actionFKhLSecondFloor.triggered.connect(self.underConstruction)
 
-        self.KIPiA = QtWidgets.QAction(MainWindow)
-        self.KIPiA.setCheckable(False)
-        self.KIPiA.triggered.connect(self.underConstruction)
-        self.KIPiA.setObjectName("KIPiA")
+        self.ASUTP = QtWidgets.QAction(MainWindow)
+        self.ASUTP.setCheckable(False)
+        self.ASUTP.triggered.connect(self.asutp)
+        self.ASUTP.setObjectName("ASUTP")
 
-        self.SGE = QtWidgets.QAction(MainWindow)
-        self.SGE.setObjectName("SGE")
-        self.SGE.triggered.connect(self.underConstruction)
-
-        self.SGM = QtWidgets.QAction(MainWindow)
-        self.SGM.setObjectName("SGM")
-        self.SGM.triggered.connect(self.underConstruction)
 
         self.actionKaratauMap = QtWidgets.QAction(MainWindow)
         self.actionKaratauMap.setObjectName("actionKaratauMap")
@@ -471,9 +466,7 @@ class Ui_MainWindow(object):
         self.menuObjects.addSeparator()
         self.menuObjects.addAction(self.actionGBK)
         self.menuObjects.addAction(self.menuActionFKhL.menuAction())
-        self.menuDepartments.addAction(self.KIPiA)
-        self.menuDepartments.addAction(self.SGE)
-        self.menuDepartments.addAction(self.SGM)
+        self.menuDepartments.addAction(self.ASUTP)
         self.menubar.addAction(self.menuMaps.menuAction())
         #self.menubar.addAction(self.menuAboutUs.menuAction())
         self.menubar.addAction(self.menuObjects.menuAction())
@@ -579,7 +572,13 @@ class Ui_MainWindow(object):
         self.ui.setupUi(self.window)
         #MainWindow.hide()
         self.window.show()
-     
+
+    def asutp(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_ASUTP()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
     def welcomeVideo(self):
         script_path = os.path.abspath(__file__)
         script_dir = os.path.split(script_path)[0]
@@ -627,9 +626,7 @@ class Ui_MainWindow(object):
         self.actionRaskomandirovka.setText(_translate("MainWindow", "Раскомандировка"))
         self.actionFKhLFirstFloor.setText(_translate("MainWindow", "Первый этаж"))
         self.actionFKhLSecondFloor.setText(_translate("MainWindow", "Второй этаж"))
-        self.KIPiA.setText(_translate("MainWindow", "КИПиА"))
-        self.SGE.setText(_translate("MainWindow", "СГЭ"))
-        self.SGM.setText(_translate("MainWindow", "СГМ"))
+        self.ASUTP.setText(_translate("MainWindow", "АСУ ТП"))
         self.actionKaratauMap.setText(_translate("MainWindow", "Каратау"))
 
 if __name__ == "__main__":
