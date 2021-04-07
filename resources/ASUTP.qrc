@@ -1,8 +1,8 @@
 <RCC>
   <qresource prefix="ASUTP">
     <file>../images/АСУТП/Деятельность.png</file>
-    <file>../images/АСУТП/Оборудование.png</file>
     <file>../images/АСУТП/Структура.png</file>
+    <file>../images/АСУТП/Оборудование.png</file>
     <file>../images/АСУТП/АСУТП.jpg</file>
   </qresource>
 </RCC>
