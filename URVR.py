@@ -4,20 +4,20 @@ from resources import MainWindowResources
 from resources import MapsResizeResources
 
 
-class Ui_Svyaz(object):
+class Ui_URVR(object):
     def setupUi(self, MainWindow):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(850, 300)
-        MainWindow.setMinimumSize(QtCore.QSize(850, 300))
-        MainWindow.setMaximumSize(QtCore.QSize(850, 300))
+        MainWindow.resize(880, 300)
+        MainWindow.setMinimumSize(QtCore.QSize(880, 300))
+        MainWindow.setMaximumSize(QtCore.QSize(880, 300))
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(0, 0, 850, 300))
+        self.label.setGeometry(QtCore.QRect(0, 0, 880, 300))
         self.label.setStyleSheet("QLabel{\n"
             "color: rgb(0, 0, 0);\n"
             "font: 1000 18pt \"Times New Roman\" ;\n""}")
@@ -31,20 +31,19 @@ class Ui_Svyaz(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Связь"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "УРВР"))
         self.label.setText(_translate("MainWindow",
-         "          Связь между полигоном и сервером осуществляется\n "
-         "   благодоря комбинации wi-fi сигнала и оптической связи.\n"
-         "    Информация из блоков передатчиков собирается в точ-\n"
-         "    ках  доступа  по  средствам wi-fi,  и  передается  далее\n"
-         "    через волоконно-oптический кабель."))
+         "         УРВР - узел распределения выщелачивающего раствора.\n "
+         "   ВР из УПВР, через данный блок идет в закачные скважины.\n"
+         "         Также, используется блок УПРР. Данный блок совмещает\n"
+         "    функции УРВР и УППР."))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_Svyaz()
+    ui = Ui_URVR()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

@@ -4,7 +4,7 @@ from resources import MainWindowResources
 from resources import MapsResizeResources
 
 
-class Ui_Svyaz(object):
+class Ui_Shlam(object):
     def setupUi(self, MainWindow):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
@@ -31,20 +31,19 @@ class Ui_Svyaz(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Связь"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Шламонакопитель"))
         self.label.setText(_translate("MainWindow",
-         "          Связь между полигоном и сервером осуществляется\n "
-         "   благодоря комбинации wi-fi сигнала и оптической связи.\n"
-         "    Информация из блоков передатчиков собирается в точ-\n"
-         "    ках  доступа  по  средствам wi-fi,  и  передается  далее\n"
-         "    через волоконно-oптический кабель."))
+         "          Шламонакопитель -  технологический объект, где\n "
+         "   ВР  и  ПР  отстаиваются  перед закачкой и  откачкой  на \n"
+         "    на ГТП соответственно. Представляет из себя несколько\n"
+         "    котлованов.\n"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_Svyaz()
+    ui = Ui_Shlam()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

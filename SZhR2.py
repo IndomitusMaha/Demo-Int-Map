@@ -8,16 +8,16 @@ class Ui_SZhR2(object):
     def setupUi(self, MainWindow):
         MainWindow.setWindowIcon(QtGui.QIcon('karatauicon.png'))
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(650, 300)
-        MainWindow.setMinimumSize(QtCore.QSize(650, 300))
-        MainWindow.setMaximumSize(QtCore.QSize(650, 300))
+        MainWindow.resize(850, 300)
+        MainWindow.setMinimumSize(QtCore.QSize(850, 300))
+        MainWindow.setMaximumSize(QtCore.QSize(850, 300))
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(0, 0, 650, 300))
+        self.label.setGeometry(QtCore.QRect(0, 0, 850, 300))
         self.label.setStyleSheet("QLabel{\n"
             "color: rgb(0, 0, 0);\n"
             "font: 1000 18pt \"Times New Roman\" ;\n""}")
@@ -31,7 +31,7 @@ class Ui_SZhR2(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Связь"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "СЖР"))
         self.label.setText(_translate("MainWindow",
          "          СЖР - склад жидких реагентов. Здесь хранится \n "
          "   кислота. Кислотовозы доставляют ее сюда. Отсюда же,\n"

@@ -17,6 +17,11 @@ from UPRR import Ui_UPRR
 from UnderConstruction import Ui_UnderConstruction
 from Svyaz import Ui_Svyaz
 from SZhR2 import Ui_SZhR2
+from UPPR import Ui_UPPR
+from UPVR import Ui_UPVR
+from Shlam import Ui_Shlam
+from URVR import Ui_URVR
+
 
 
 class Ui_GTPPoligon(object):
@@ -63,6 +68,7 @@ class Ui_GTPPoligon(object):
 "}")
         self.uPRRButton.setObjectName("uPRRButton")
         self.uPRRButton.clicked.connect(self.uprr)
+        #self.uPRRButton.clicked.connect(self.uRVR)
 
         self.uPVRButton = QtWidgets.QPushButton(self.centralwidget)
         self.uPVRButton.setGeometry(QtCore.QRect(480, 80, 81, 40))
@@ -85,7 +91,7 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.uPVRButton.setObjectName("uPVRButton")
-        self.uPVRButton.clicked.connect(self.underConstruction)
+        self.uPVRButton.clicked.connect(self.uPVR)
 
         self.uPPRButton = QtWidgets.QPushButton(self.centralwidget)
         self.uPPRButton.setGeometry(QtCore.QRect(130, 170, 71, 40))
@@ -107,7 +113,7 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.uPPRButton.setObjectName("uPPRButton")
-        self.uPPRButton.clicked.connect(self.underConstruction)
+        self.uPPRButton.clicked.connect(self.uPPR)
 
         self.sZhRButton = QtWidgets.QPushButton(self.centralwidget)
         self.sZhRButton.setGeometry(QtCore.QRect(670, 60, 81, 40))
@@ -132,7 +138,7 @@ class Ui_GTPPoligon(object):
         self.sZhRButton.clicked.connect(self.sZhR2)
 
         self.gtpMapButton_5 = QtWidgets.QPushButton(self.centralwidget)
-        self.gtpMapButton_5.setGeometry(QtCore.QRect(260, 110, 181, 40))
+        self.gtpMapButton_5.setGeometry(QtCore.QRect(240, 110, 201, 40))
         self.gtpMapButton_5.setMinimumSize(QtCore.QSize(0, 30))
         self.gtpMapButton_5.setStyleSheet("QPushButton{\n"
 
@@ -154,7 +160,7 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.gtpMapButton_5.setObjectName("gtpMapButton_5")
-        self.gtpMapButton_5.clicked.connect(self.underConstruction)
+        self.gtpMapButton_5.clicked.connect(self.shlam)
 
         self.gtpMapButton_6 = QtWidgets.QPushButton(self.centralwidget)
         self.gtpMapButton_6.setGeometry(QtCore.QRect(60, 10, 81, 40))
@@ -216,6 +222,30 @@ class Ui_GTPPoligon(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
+    def uPPR(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_UPPR()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def uPVR(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_UPVR()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def shlam(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Shlam()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def uRVR(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_URVR()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
     def underConstruction(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_UnderConstruction()
@@ -225,11 +255,11 @@ class Ui_GTPPoligon(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Полигон"))
-        self.uPRRButton.setText(_translate("MainWindow", "УПРР"))
+        self.uPRRButton.setText(_translate("MainWindow", "УРВР"))
         self.uPVRButton.setText(_translate("MainWindow", "УПВР"))
         self.uPPRButton.setText(_translate("MainWindow", "УППР"))
         self.sZhRButton.setText(_translate("MainWindow", "СЖР"))
-        self.gtpMapButton_5.setText(_translate("MainWindow", "Шламотстойник"))
+        self.gtpMapButton_5.setText(_translate("MainWindow", "Шламонакопитель"))
         self.gtpMapButton_6.setText(_translate("MainWindow", "Связь"))
 
 
