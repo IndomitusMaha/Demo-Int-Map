@@ -15,6 +15,8 @@ from resources import logos
 from resources import OrangeBackgroundResources
 from UPRR import Ui_UPRR
 from UnderConstruction import Ui_UnderConstruction
+from Svyaz import Ui_Svyaz
+from SZhR2 import Ui_SZhR2
 
 
 class Ui_GTPPoligon(object):
@@ -127,7 +129,7 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.sZhRButton.setObjectName("sZhRButton")
-        self.sZhRButton.clicked.connect(self.underConstruction)
+        self.sZhRButton.clicked.connect(self.sZhR2)
 
         self.gtpMapButton_5 = QtWidgets.QPushButton(self.centralwidget)
         self.gtpMapButton_5.setGeometry(QtCore.QRect(260, 110, 181, 40))
@@ -174,7 +176,7 @@ class Ui_GTPPoligon(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.gtpMapButton_6.setObjectName("gtpMapButton_6")
-        self.gtpMapButton_6.clicked.connect(self.underConstruction)
+        self.gtpMapButton_6.clicked.connect(self.svyaz)
 
         self.label.raise_()
         self.uPPRButton.raise_()
@@ -200,6 +202,18 @@ class Ui_GTPPoligon(object):
         self.ui = Ui_UPRR()
         self.ui.setupUi(self.window)
         #MainWindow.hide()
+        self.window.show()
+
+    def svyaz(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Svyaz()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def sZhR2(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_SZhR2()
+        self.ui.setupUi(self.window)
         self.window.show()
 
     def underConstruction(self):
