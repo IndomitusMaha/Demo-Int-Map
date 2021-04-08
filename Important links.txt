@@ -26,4 +26,6 @@ pyinstaller -F -w -i"полный адрес иконки" main.py
 	-w для неконсольных программ
 	-i для установки собственной иконки
 
+pyinstaller -F -w -i"C:\Users\Asus\Desktop\Демка(1920x1080)\karatauicon.ico" Login.py
+
 

@@ -16,7 +16,8 @@ from resources import OrangeBackgroundResources
 from resources import MainWindowResources
 from resources import MainWindowResourcesResize
 from OtherWindow import Ui_OtherWindow
-from GTPPoligon import Ui_GTPPoligon
+from GTPPoligonG import Ui_GTPPoligonG
+from GTPPoligonW import Ui_GTPPoligonW
 from Global import Ui_GlobalMap
 from Karatau import Ui_Karatau
 from CPPR import Ui_CPPR
@@ -567,11 +568,18 @@ class Ui_MainWindow(object):
         self.window.show()
 
     def gtpPoligon(self):
-        self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_GTPPoligon()
-        self.ui.setupUi(self.window)
-        #MainWindow.hide()
-        self.window.show()
+        if self.workerRadioButton.isChecked():
+            self.window = QtWidgets.QMainWindow()
+            self.ui = Ui_GTPPoligonW()
+            self.ui.setupUi(self.window)
+            # MainWindow.hide()
+            self.window.show()
+        else:
+            self.window = QtWidgets.QMainWindow()
+            self.ui = Ui_GTPPoligonG()
+            self.ui.setupUi(self.window)
+            # MainWindow.hide()
+            self.window.show()
 
     def asutp(self):
         self.window = QtWidgets.QMainWindow()
@@ -606,7 +614,7 @@ class Ui_MainWindow(object):
         self.modeLabel.setText(_translate("MainWindow", "        Режим"))
         self.workerRadioButton.setText(_translate("MainWindow", "Сотрудник"))
         self.guestRadioButton.setText(_translate("MainWindow", "Гость"))
-        self.welcomeVideoButton.setText(_translate("MainWindow", " Приветствие    "))
+        self.welcomeVideoButton.setText(_translate("MainWindow", "   Приветствие    "))
         self.gtpMapButton.setText(_translate("MainWindow", "ГТП"))
         self.cpprMapButton.setText(_translate("MainWindow", "ЦППР"))
         self.apMapButton.setText(_translate("MainWindow", "АП"))

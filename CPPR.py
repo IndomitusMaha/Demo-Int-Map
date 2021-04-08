@@ -126,53 +126,8 @@ class Ui_CPPR(object):
 "background-color: rgb(255, 148, 164);\n"
 "}")
         self.podgotovkaButton.setObjectName("podgotovkaButton")
-        self.ssrButton = QtWidgets.QPushButton(self.centralwidget)
-        self.ssrButton.setGeometry(QtCore.QRect(10, 250, 161, 31))
-        self.ssrButton.setMinimumSize(QtCore.QSize(0, 30))
-        self.ssrButton.setStyleSheet("QPushButton{\n"
-"color: rgb(0, 0, 0);\n"
-"background-color: rgb(246, 250, 5);\n"
-"background-image: url(:/arrow right/images/Karatau yellow background.png);\n"
-"border-style:outset;\n"
-"border-radius:10px;\n"
-"font: 100 14pt \"Arial\" ;\n"
-"}\n"
-"QPushButton:hover{\n"
-"color:rgb(0, 0, 05);\n"
-"background-color: rgb(245, 169, 17);\n"
-"border-radius:5px;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"color:rgb(0, 0, 0);\n"
-"background-color: rgb(255, 148, 164);\n"
-"}")
-        self.ssrButton.setObjectName("ssrButton")
+
         MainWindow.setCentralWidget(self.centralwidget)
-        self.actionGlobalMap = QtWidgets.QAction(MainWindow)
-        self.actionGlobalMap.setObjectName("actionGlobalMap")
-        self.actionCPPR = QtWidgets.QAction(MainWindow)
-        self.actionCPPR.setObjectName("actionCPPR")
-        self.actionAP = QtWidgets.QAction(MainWindow)
-        self.actionAP.setObjectName("actionAP")
-        self.actionGBK = QtWidgets.QAction(MainWindow)
-        self.actionGBK.setObjectName("actionGBK")
-        self.actionPoligon = QtWidgets.QAction(MainWindow)
-        self.actionPoligon.setObjectName("actionPoligon")
-        self.actionRaskomandirovka = QtWidgets.QAction(MainWindow)
-        self.actionRaskomandirovka.setObjectName("actionRaskomandirovka")
-        self.actionFKhLFirstFloor = QtWidgets.QAction(MainWindow)
-        self.actionFKhLFirstFloor.setObjectName("actionFKhLFirstFloor")
-        self.actionFKhLSecondFloor = QtWidgets.QAction(MainWindow)
-        self.actionFKhLSecondFloor.setObjectName("actionFKhLSecondFloor")
-        self.KIPiA = QtWidgets.QAction(MainWindow)
-        self.KIPiA.setCheckable(False)
-        self.KIPiA.setObjectName("KIPiA")
-        self.SGE = QtWidgets.QAction(MainWindow)
-        self.SGE.setObjectName("SGE")
-        self.SGM = QtWidgets.QAction(MainWindow)
-        self.SGM.setObjectName("SGM")
-        self.actionKaratauMap = QtWidgets.QAction(MainWindow)
-        self.actionKaratauMap.setObjectName("actionKaratauMap")
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -184,19 +139,6 @@ class Ui_CPPR(object):
         self.sorbciaButton.setText(_translate("MainWindow", "Сорбция"))
         self.desorbciaButton.setText(_translate("MainWindow", "Десорбция"))
         self.podgotovkaButton.setText(_translate("MainWindow", "Подготовка"))
-        self.ssrButton.setText(_translate("MainWindow", "ССР"))
-        self.actionGlobalMap.setText(_translate("MainWindow", "Глобальная"))
-        self.actionCPPR.setText(_translate("MainWindow", "ЦППР"))
-        self.actionAP.setText(_translate("MainWindow", "АП"))
-        self.actionGBK.setText(_translate("MainWindow", "ГБК"))
-        self.actionPoligon.setText(_translate("MainWindow", "Полигон"))
-        self.actionRaskomandirovka.setText(_translate("MainWindow", "Раскомандировка"))
-        self.actionFKhLFirstFloor.setText(_translate("MainWindow", "Первый этаж"))
-        self.actionFKhLSecondFloor.setText(_translate("MainWindow", "Второй этаж"))
-        self.KIPiA.setText(_translate("MainWindow", "КИПиА"))
-        self.SGE.setText(_translate("MainWindow", "СГЭ"))
-        self.SGM.setText(_translate("MainWindow", "СГМ"))
-        self.actionKaratauMap.setText(_translate("MainWindow", "Каратау"))
 
 if __name__ == "__main__":
     import sys
